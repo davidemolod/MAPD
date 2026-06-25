@@ -9,7 +9,9 @@
 
   gtag('config', 'G-YN52D1BKK1');
 </script>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='44' y1='6' x2='44' y2='58' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8a1f'/%3E%3Cstop offset='.5' stop-color='%23ef5b6c'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23ffffff'/%3E%3Cpath d='M34 57a25 25 0 1 1 0-50' fill='none' stroke='%23111827' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M34 7a25 25 0 0 1 0 50' fill='none' stroke='url(%23g)' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='28' cy='32' r='5' fill='%23ffffff' stroke='%23111827' stroke-width='3'/%3E%3Cpath d='M28 32 43 20M28 32h19M28 32l15 12' fill='none' stroke='%23111827' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='43' cy='20' r='4.5' fill='%23ff8a1f'/%3E%3Ccircle cx='48' cy='32' r='4.5' fill='%23ef5b6c'/%3E%3Ccircle cx='43' cy='44' r='4.5' fill='%238b5cf6'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -484,12 +486,14 @@ svg *{transition:none}
 }
 .hero-content{position:relative;z-index:1;max-width:900px}
 .hero-badge{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:6px 18px;border-radius:999px;
+  display:inline-flex;flex-direction:column;align-items:center;gap:2px;
+  padding:8px 20px;border-radius:999px;
   border:1px solid rgba(245,166,35,.3);background:rgba(245,166,35,.07);
-  color:var(--gold);font-size:11px;font-weight:600;
+  color:var(--gold);font-size:11px;font-weight:700;
   letter-spacing:.1em;text-transform:uppercase;margin-bottom:32px;
 }
+.hero-badge-main{display:inline-flex;align-items:center;gap:8px;line-height:1}
+.hero-badge-sub{display:block;color:var(--tx-2);font-size:9px;font-weight:700;letter-spacing:.12em;line-height:1.2}
 .hero-badge-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
 .hero-h1{
@@ -1041,7 +1045,7 @@ svg *{transition:none}
 <section class="hero">
   <div class="hero-bg-glow"></div>
   <div class="hero-content">
-    <div class="hero-badge reveal up"><div class="hero-badge-dot"></div>MAPD · 2026 Interactive Edition</div>
+    <div class="hero-badge reveal up"><span class="hero-badge-main"><span class="hero-badge-dot"></span>MAPD Version 1.1</span><span class="hero-badge-sub">Updated June 2026</span></div>
     
     <h1 class="hero-h1 reveal up">The AI Ecosystem,<br><em>MAPD.</em></h1>
     <p class="hero-sub reveal up">64 companies · 73 relationships · 10 ecosystem layers · $20 trillion+ in ecosystem value — all in one interactive intelligence map.</p>
@@ -1332,7 +1336,7 @@ svg *{transition:none}
     <h2 class="sec-h2 syn">Frequently Asked</h2>
   </div>
   <div class="faq-list">
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How current is this data?<div class="faq-ico">+</div></button><div class="faq-a">Core facts are verified to mid-2025. Major investments, ownership relationships, and model dependencies have been cross-checked. AI moves fast — some 2026 estimates (like valuations) are based on the most recent public information and may shift. When in doubt, company websites and SEC filings are the source of truth.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How current is this data?<div class="faq-ico">+</div></button><div class="faq-a">Updated June 2026. Major investments, ownership relationships, model dependencies, and valuation language have been cross-checked. AI moves fast, so some estimates may shift. When in doubt, company websites and SEC filings are the source of truth.</div></div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What do the different colored lines mean?<div class="faq-ico">+</div></button><div class="faq-a">There are five line types: Gold solid lines = financial investment (money changing hands). Teal long-dashed lines = strategic partnerships. Gray dotted lines = alumni spinoffs (key people who left to found something new). Blue solid lines = ownership (company owns this product). Green short-dashed lines = AI powering a product. Click any line to get the full story behind it.</div></div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why isn't [company X] on the map?<div class="faq-ico">+</div></button><div class="faq-a">The map prioritizes the highest-impact nodes in each layer — companies that represent a distinct capability or relationship in the ecosystem. Some companies were excluded for being subsidiaries already represented by their parent, being too niche for a general audience, or because their AI story wasn't materially different from existing nodes. This is an evolving project and new nodes can always be added.</div></div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I navigate the map on mobile?<div class="faq-ico">+</div></button><div class="faq-a">On mobile, use two fingers to pinch-zoom and one finger to pan. Tap any node to open its detail panel, which slides in from the right. Tap any connecting line for the relationship story. Use the filter buttons at the top to isolate specific layers of the ecosystem.</div></div>
@@ -1395,7 +1399,7 @@ svg *{transition:none}
 </svg></span>
       MAPD
     </div> AI Ecosystem 2026</div>
-    <div class="foot-meta"><span class="live-dot"></span>© 2026 MAPD · Data verified June 2026 · 64 companies · 73 relationships</div>
+    <div class="foot-meta"><span class="live-dot"></span>© 2026 MAPD · Updated June 2026 · 64 companies · 73 relationships</div>
   
 </footer>
 
@@ -2569,7 +2573,7 @@ function showPanel(d){
     "<div class=\"mrow\"><div class=\"mc\"><div class=\"ml\">Founded</div><div class=\"mv\">"+d.founded+"</div></div><div class=\"mc\"><div class=\"ml\">HQ</div><div class=\"mv\">"+d.hq+"</div></div><div class=\"mc w\"><div class=\"ml\">Valuation / Market Cap</div><div class=\"mv\">"+d.val+"</div></div></div>"+
     pplH+prdH+modH+
     ((cH||aH)?"<div><div class=\"pst\">🔗 Connections — click for details</div>"+cH+aH+"</div>":"")+
-    "<div class=\"disc\">⚠️ Fast-moving space. Core facts verified to mid-2025; some 2026 estimates.</div>";
+    "<div class=\"disc\">⚠️ Fast-moving space. Updated June 2026; some estimates may shift.</div>";
   document.getElementById("panel").classList.add("open");
   try{history.replaceState(null,"","#"+d.id);}catch(e){if(location.hash.replace(/^#/,"")!==d.id)location.hash=d.id;}
 }
