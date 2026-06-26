@@ -22,16 +22,16 @@
 <meta property="og:url" content="https://mapdguide.com/">
 <meta property="og:title" content="The AI Ecosystem, MAPD.">
 <meta property="og:description" content="MAPD — The AI Ecosystem Intelligence Map. 64 companies, 73 relationships, 10 layers, mapped.">
-<meta property="og:image" content="https://mapdguide.com/mapd-social-preview.png">
-<meta property="og:image:secure_url" content="https://mapdguide.com/mapd-social-preview.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="https://mapdguide.com/favicon.svg">
+<meta property="og:image:secure_url" content="https://mapdguide.com/favicon.svg">
+<meta property="og:image:type" content="image/svg+xml">
+<meta property="og:image:width" content="64">
+<meta property="og:image:height" content="64">
 <meta property="og:image:alt" content="MAPD — The AI Ecosystem Intelligence Map">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The AI Ecosystem, MAPD.">
 <meta name="twitter:description" content="MAPD — The AI Ecosystem Intelligence Map. 64 companies, 73 relationships, 10 layers, mapped.">
-<meta name="twitter:image" content="https://mapdguide.com/mapd-social-preview.png">
+<meta name="twitter:image" content="https://mapdguide.com/favicon.svg">
 <style id="mapd-embedded-fonts">
 /* cyrillic-ext */
 @font-face {
@@ -1545,6 +1545,8 @@ function openMarqueeNode(id){
   setTimeout(go,420);
 }
 const mq=document.getElementById('mq');
+let mqLastViewportWidth=0;
+let mqResizeTimer=0;
 function mqButton(i){
   const name=escHtml(i.n);
   const style='--mw:'+(i.mw||176)+'px;--mh:'+(i.mh||46)+'px;--min:'+(i.min||160)+'px;--fs:'+(i.fs||27)+'px';
@@ -1557,13 +1559,20 @@ mq.innerHTML='<div class="mq-set">'+MQ_ITEMS.map(mqButton).join('')+'</div><div 
 function syncMarqueeLoop(){
   const first=mq.querySelector('.mq-set');
   if(!first)return;
+  mqLastViewportWidth=Math.round(window.innerWidth||document.documentElement.clientWidth||0);
   mq.classList.remove('run');
   const gap=parseFloat(getComputedStyle(mq).gap)||0;
   mq.style.setProperty('--mq-shift',(first.getBoundingClientRect().width+gap)+'px');
   requestAnimationFrame(function(){mq.classList.add('run');});
 }
+function syncMarqueeLoopOnResize(){
+  const w=Math.round(window.innerWidth||document.documentElement.clientWidth||0);
+  if(mqLastViewportWidth&&w&&Math.abs(w-mqLastViewportWidth)<4)return;
+  clearTimeout(mqResizeTimer);
+  mqResizeTimer=setTimeout(syncMarqueeLoop,120);
+}
 window.addEventListener('load',syncMarqueeLoop);
-window.addEventListener('resize',syncMarqueeLoop);
+window.addEventListener('resize',syncMarqueeLoopOnResize,{passive:true});
 setTimeout(syncMarqueeLoop,600);
 mq.addEventListener('click',function(e){const btn=e.target.closest('.mq-logo-btn');if(btn)openMarqueeNode(btn.dataset.node);});
 
