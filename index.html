@@ -15,25 +15,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MAPD — The AI Ecosystem Intelligence Map</title>
-<meta name="description" content="MAPD — The AI Ecosystem Intelligence Map. 76 companies, 86 relationships, 10 layers, mapped. From Nvidia&#39;s chips to the apps in your pocket.">
+<title>MAPD | The AI Ecosystem Intelligence Map</title>
+<meta name="description" content="MAPD is the AI Ecosystem Intelligence Map. Explore 76 companies, 86 relationships, and 10 connected layers.">
+<meta name="theme-color" content="#080912">
 <link rel="canonical" href="https://mapdguide.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mapdguide.com/">
 <meta property="og:title" content="The AI Ecosystem, MAPD.">
-<meta property="og:description" content="MAPD — The AI Ecosystem Intelligence Map. 76 companies, 86 relationships, 10 layers, mapped.">
+<meta property="og:description" content="MAPD is the AI Ecosystem Intelligence Map. Explore 76 companies, 86 relationships, and 10 connected layers.">
 <meta property="og:image" content="https://mapdguide.com/og-image.png">
 <meta property="og:image:secure_url" content="https://mapdguide.com/og-image.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="MAPD — The AI Ecosystem Intelligence Map">
+<meta property="og:image:alt" content="MAPD, the AI Ecosystem Intelligence Map">
 <link rel="image_src" href="https://mapdguide.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The AI Ecosystem, MAPD.">
-<meta name="twitter:description" content="MAPD — The AI Ecosystem Intelligence Map. 76 companies, 86 relationships, 10 layers, mapped.">
+<meta name="twitter:description" content="MAPD is the AI Ecosystem Intelligence Map. Explore 76 companies, 86 relationships, and 10 connected layers.">
 <meta name="twitter:image" content="https://mapdguide.com/og-image.png">
-<meta name="twitter:image:alt" content="MAPD — The AI Ecosystem Intelligence Map">
+<meta name="twitter:image:alt" content="MAPD, the AI Ecosystem Intelligence Map">
 <style id="mapd-embedded-fonts">
 /* cyrillic-ext */
 @font-face {
@@ -1025,7 +1026,7 @@ svg *{transition:none}
 [data-theme="dark"] .news-card:hover{background:rgba(19,25,40,.96);border-color:rgba(255,255,255,.16)}
 [data-theme="dark"] .news-card::before{opacity:.12}
 
-/* ── MAP THEME — follows site toggle automatically ── */
+/* ── MAP THEME , follows site toggle automatically ── */
 [data-theme="dark"] #svg{background:#06070d!important}
 [data-theme="dark"] .nc{fill:#0b0d16!important}
 [data-theme="dark"] .nlt{fill:#7c8aaa!important}
@@ -1110,6 +1111,1039 @@ svg *{transition:none}
 .news-label{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .news-arrow{flex-shrink:0;opacity:.55;transition:transform .15s,opacity .15s}
 .news-btn:hover .news-arrow{opacity:1;transform:translate(1px,-1px)}
+
+/* MAPD BRAND SYSTEM V2
+   A restrained editorial atlas with precise color signals. */
+*,*::before,*::after{letter-spacing:0!important}
+:root{
+  --font-display:'Syne',system-ui,sans-serif;
+  --font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --font-data:'JetBrains Mono',ui-monospace,monospace;
+  --ink:#0b1020;
+  --ink-soft:#172036;
+  --paper:#f5f7fb;
+  --paper-bright:#ffffff;
+  --orange:#ff7a00;
+  --coral:#ef4f6c;
+  --violet:#7154e8;
+  --signal-blue:#377cf6;
+  --brand-flow:linear-gradient(90deg,var(--orange),var(--coral),var(--violet));
+  --bg:var(--paper);
+  --bg-2:var(--paper-bright);
+  --bg-3:#edf1f8;
+  --bg-card:rgba(255,255,255,.76);
+  --glass:rgba(250,252,255,.78);
+  --glass-2:rgba(255,255,255,.9);
+  --surface:rgba(255,255,255,.7);
+  --surface-strong:rgba(255,255,255,.9);
+  --border:rgba(22,31,54,.09);
+  --bh:rgba(22,31,54,.16);
+  --tx:var(--ink);
+  --tx-2:#526079;
+  --tx-3:#8490a7;
+  --gold:var(--orange);
+  --purple:var(--violet);
+  --blue:var(--signal-blue);
+  --gold-g:rgba(255,122,0,.14);
+  --blue-g:rgba(55,124,246,.12);
+  --purple-g:rgba(113,84,232,.12);
+  --r:6px;
+  --rm:8px;
+  --rl:8px;
+  --ease:cubic-bezier(.22,.8,.22,1);
+  --mr:#11182b;
+  --shadow-soft:0 18px 48px rgba(33,45,75,.1);
+  --shadow-deep:0 28px 80px rgba(23,31,54,.14);
+}
+[data-theme="dark"]{
+  --bg:#080a10;
+  --bg-2:#0e111a;
+  --bg-3:#161b28;
+  --bg-card:rgba(18,22,33,.78);
+  --glass:rgba(10,13,20,.76);
+  --glass-2:rgba(15,19,29,.9);
+  --surface:rgba(18,22,33,.68);
+  --surface-strong:rgba(21,26,39,.9);
+  --border:rgba(255,255,255,.08);
+  --bh:rgba(255,255,255,.15);
+  --tx:#f5f7fc;
+  --tx-2:#a1abc0;
+  --tx-3:#69758e;
+  --mr:#ffffff;
+  --shadow-soft:0 18px 52px rgba(0,0,0,.24);
+  --shadow-deep:0 30px 90px rgba(0,0,0,.36);
+}
+html{background:var(--bg)}
+body{
+  position:relative;
+  isolation:isolate;
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--tx);
+}
+body::before{
+  display:none;
+}
+body::after{
+  display:none;
+}
+h1,h2,h3,.syn,.nav-logo,.foot-logo,.btn-gold,.btn-outline,.faq-q{
+  font-family:var(--font-display);
+  letter-spacing:0;
+}
+.mono,.sec-tag,.md-kicker,.hs-lbl,.read-kpi span,.news-badge,.news-live,.lt,.li,.fb,.pblbl,.pst,.ml,.chain-lbl{
+  font-family:var(--font-data);
+  letter-spacing:0;
+}
+
+/* Navigation */
+.nav{
+  top:0;
+  left:0;
+  right:0;
+  height:68px;
+  padding:0 42px;
+  border:0;
+  border-bottom:1px solid var(--border);
+  border-radius:0;
+  background:var(--glass);
+  box-shadow:0 8px 34px rgba(20,29,50,.06);
+  backdrop-filter:blur(24px) saturate(145%);
+  -webkit-backdrop-filter:blur(24px) saturate(145%);
+}
+.nav::after{
+  content:"";
+  position:absolute;
+  left:42px;
+  bottom:-1px;
+  width:84px;
+  height:2px;
+  background:var(--brand-flow);
+}
+.nav-logo{font-size:18px;font-weight:800}
+.mapd-svg-wrap{width:38px;height:38px;filter:none}
+.nav-links{gap:12px}
+.nav-links a{
+  position:relative;
+  padding:8px 8px;
+  border-radius:4px;
+  color:var(--tx-2);
+  font-family:var(--font-body);
+  font-size:13px;
+  font-weight:600;
+}
+.nav-links a:hover{color:var(--tx);background:transparent}
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:8px;
+  right:8px;
+  bottom:3px;
+  height:1px;
+  background:var(--orange);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .2s var(--ease);
+}
+.nav-links a:hover::after{transform:scaleX(1)}
+.theme-btn{
+  height:36px;
+  padding:0 12px;
+  border:1px solid var(--bh);
+  border-radius:6px;
+  background:var(--surface);
+  color:var(--tx-2);
+  font-family:var(--font-data);
+  font-size:10px;
+  box-shadow:0 8px 24px rgba(20,29,50,.06),0 1px 0 rgba(255,255,255,.4) inset;
+}
+
+/* Hero */
+.hero{
+  min-height:auto;
+  padding:132px 32px 66px;
+  overflow:hidden;
+}
+.hero-bg-glow{
+  display:none;
+}
+.hero-content{max-width:1100px}
+.hero-badge{
+  display:inline-flex;
+  flex-direction:row;
+  gap:12px;
+  padding:0;
+  margin-bottom:28px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  color:var(--orange);
+  font-family:var(--font-data);
+  font-size:10px;
+  letter-spacing:0;
+}
+.hero-badge::before{display:none}
+.hero-badge-main,.hero-badge-sub{position:relative}
+.hero-badge-sub{
+  color:var(--tx-3);
+  font-family:var(--font-data);
+  font-size:10px;
+  letter-spacing:0;
+}
+.hero-badge-dot{
+  width:5px;
+  height:5px;
+  background:var(--orange);
+  box-shadow:0 0 0 4px rgba(255,122,0,.1);
+}
+.hero-h1{
+  max-width:1000px;
+  margin:0 auto 24px;
+  color:var(--tx);
+  font-size:clamp(54px,8.6vw,106px);
+  font-weight:800;
+  line-height:.94;
+  letter-spacing:0;
+  text-shadow:none;
+}
+.hero-h1 em{
+  display:inline-block;
+  padding:0;
+  color:transparent;
+  background:var(--brand-flow);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter:none;
+  animation:none;
+  font-style:normal;
+}
+.brand-word{
+  display:inline-block;
+  color:transparent;
+  background:var(--brand-flow);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero-h1 em::after{
+  content:"";
+  display:block;
+  width:100%;
+  height:5px;
+  margin-top:8px;
+  background:var(--brand-flow);
+  transform:scaleX(.72);
+  transform-origin:center;
+  transition:transform .3s var(--ease);
+}
+.hero-h1:hover em::after{transform:scaleX(1)}
+.hero-sub{
+  max-width:690px;
+  margin-bottom:32px;
+  color:var(--tx-2);
+  font-size:17px;
+  line-height:1.7;
+}
+.hero-ctas{margin-bottom:48px}
+.btn-gold,.btn-outline{
+  min-height:46px;
+  padding:0 24px;
+  border-radius:6px;
+  font-size:14px;
+  font-weight:700;
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease);
+}
+.btn-gold{
+  position:relative;
+  overflow:hidden;
+  color:#fff;
+  background:var(--ink);
+  box-shadow:0 12px 30px rgba(11,16,32,.18);
+}
+[data-theme="dark"] .btn-gold{color:var(--ink);background:#fff}
+.btn-gold::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:3px;
+  background:var(--brand-flow);
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(11,16,32,.22)}
+.btn-outline{
+  color:var(--tx);
+  border:1px solid var(--bh);
+  background:var(--surface);
+  box-shadow:0 8px 24px rgba(20,29,50,.05);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.btn-outline:hover{transform:translateY(-2px);color:var(--tx);border-color:var(--violet);background:var(--surface-strong)}
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:0;
+  max-width:960px;
+  margin:0 auto;
+  padding:0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  background:transparent;
+}
+.hs{
+  position:relative;
+  padding:18px 22px 17px;
+  transition:background .2s var(--ease),transform .2s var(--ease);
+}
+.hs + .hs{border-left:1px solid var(--border)}
+.hs::after{
+  content:"";
+  position:absolute;
+  left:20%;
+  right:20%;
+  bottom:-1px;
+  height:2px;
+  background:var(--brand-flow);
+  transform:scaleX(0);
+  transition:transform .2s var(--ease);
+}
+.hs:hover{transform:translateY(-3px);background:var(--surface)}
+.hs:hover::after{transform:scaleX(1)}
+.hs-num{
+  display:block;
+  margin-bottom:7px;
+  color:var(--tx);
+  font-family:var(--font-display);
+  font-size:38px;
+  font-weight:800;
+  letter-spacing:0;
+}
+.hs-num.value-long .value-word{font-size:.46em}
+.hs-lbl{color:var(--tx-3);font-size:9px;text-transform:uppercase}
+
+/* Disclaimer */
+.map-disclaimer{
+  width:min(1060px,100%);
+  max-width:none;
+  margin:28px auto 0;
+  padding:16px 32px 0;
+  border-top:1px solid var(--border);
+  text-align:center;
+}
+.md-kicker{
+  display:inline-block;
+  margin:0 10px 0 0;
+  color:var(--orange);
+  font-size:9px;
+  letter-spacing:0;
+}
+.map-disclaimer p{
+  display:inline;
+  max-width:none;
+  color:var(--tx-3);
+  font-size:11px;
+  line-height:1.65;
+}
+.map-disclaimer strong{color:var(--tx-2)}
+.map-disclaimer a{
+  display:block;
+  width:max-content;
+  max-width:100%;
+  margin:9px auto 0;
+  color:var(--tx);
+  font-family:var(--font-display);
+  font-size:14px;
+  font-weight:700;
+  text-decoration:none;
+}
+.map-disclaimer a::after{
+  content:"";
+  display:block;
+  height:2px;
+  margin-top:4px;
+  background:var(--brand-flow);
+  transform:scaleX(.62);
+  transition:transform .2s var(--ease);
+}
+.map-disclaimer a:hover{text-decoration:none}
+.map-disclaimer a:hover::after{transform:scaleX(1)}
+
+/* Company rail */
+.marquee-wrap{
+  padding:16px 0;
+  background:#fff!important;
+  border-color:#e7eaf1!important;
+  box-shadow:0 16px 46px rgba(23,31,54,.09);
+}
+.marquee-wrap::before{background:linear-gradient(90deg,#fff,transparent)!important}
+.marquee-wrap::after{background:linear-gradient(270deg,#fff,transparent)!important}
+.mq-logo-btn{
+  position:relative;
+  border-radius:4px;
+  filter:none!important;
+  opacity:.88!important;
+  transition:transform .18s var(--ease),opacity .18s var(--ease);
+}
+.mq-logo-btn::after{
+  content:"";
+  position:absolute;
+  left:20%;
+  right:20%;
+  bottom:1px;
+  height:2px;
+  background:var(--orange);
+  transform:scaleX(0);
+  transition:transform .18s var(--ease);
+}
+.mq-logo-btn:hover,.mq-logo-btn:focus-visible{transform:translateY(-3px);opacity:1!important}
+.mq-logo-btn:hover::after,.mq-logo-btn:focus-visible::after{transform:scaleX(1)}
+
+/* Section system */
+.sec-hdr{margin-bottom:44px}
+.sec-tag{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:12px;
+  padding:0;
+  color:var(--orange);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:0;
+}
+.sec-tag::before{
+  content:"";
+  width:22px;
+  height:2px;
+  background:var(--brand-flow);
+}
+.sec-h2{
+  color:var(--tx);
+  font-size:clamp(36px,5vw,58px);
+  font-weight:800;
+  line-height:1.02;
+  letter-spacing:0;
+}
+.sec-sub{max-width:620px;color:var(--tx-2);font-size:15px}
+
+/* Map */
+.map-section{
+  padding:94px 0 0;
+  background:var(--bg);
+}
+.map-top-bar{max-width:1500px;margin-left:auto;margin-right:auto}
+.fs-btn{
+  min-height:38px;
+  border:1px solid var(--bh);
+  border-radius:6px;
+  background:var(--glass-2);
+  color:var(--tx-2);
+  box-shadow:var(--shadow-soft);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.map-wrap{
+  border:1px solid var(--bh);
+  border-radius:8px;
+  background:var(--bg-2);
+  box-shadow:var(--shadow-deep);
+}
+#lbar{
+  background:var(--glass-2)!important;
+  border-bottom-color:var(--border)!important;
+  font-family:var(--font-data);
+  backdrop-filter:blur(20px) saturate(135%);
+  -webkit-backdrop-filter:blur(20px) saturate(135%);
+}
+.fb{border-radius:4px}
+#msearch-bar,#msearch-results,#panel,#pop,#tip,.zb,#map-gate .gate-msg{
+  background:var(--glass-2);
+  border-color:var(--bh);
+  box-shadow:var(--shadow-soft);
+  backdrop-filter:blur(22px) saturate(140%);
+  -webkit-backdrop-filter:blur(22px) saturate(140%);
+}
+#msearch-bar,#msearch-results,.zb,#map-gate .gate-msg{border-radius:7px}
+#msearch-input{font-family:var(--font-body)}
+.pbox,.mc,.person,.conn,.chain-box,.visit-btn,.news-btn{border-radius:6px}
+
+/* Reader guide */
+.read-sec{
+  position:relative;
+  padding:78px 32px 82px;
+  overflow:hidden;
+  background:var(--bg-2);
+  border-color:var(--border);
+  box-shadow:0 24px 70px rgba(23,31,54,.06) inset;
+}
+.read-sec::before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:2px;
+  background:var(--brand-flow);
+}
+.read-wrap{max-width:1200px;grid-template-columns:minmax(300px,.9fr) minmax(500px,1.5fr);gap:70px}
+.read-copy .sec-h2{font-size:clamp(34px,4.2vw,52px);line-height:1.05}
+.read-copy p{max-width:460px;color:var(--tx-2);font-size:15px}
+.read-kpis{border-top-color:var(--border)}
+.read-kpi strong{font-family:var(--font-display);font-size:23px;letter-spacing:0}
+.read-kpi span{font-size:9px;letter-spacing:0}
+.read-actions{
+  counter-reset:guide;
+  gap:0;
+  padding-bottom:22px;
+  border-bottom-color:var(--border);
+}
+.read-action{
+  counter-increment:guide;
+  position:relative;
+  min-height:158px;
+  padding:22px 20px 18px;
+  border:0;
+  border-left:1px solid var(--border);
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  transition:background .2s var(--ease),transform .2s var(--ease);
+}
+.read-action:last-child{border-right:1px solid var(--border)}
+.read-action::before{
+  content:"0" counter(guide);
+  display:block;
+  margin-bottom:24px;
+  color:var(--orange);
+  font-family:var(--font-data);
+  font-size:10px;
+}
+.read-action:hover{transform:translateY(-3px);background:var(--surface);box-shadow:none}
+.read-action b{font-family:var(--font-display);font-size:16px}
+.read-action span{font-size:12px}
+.line-key{gap:18px}
+.line-item{
+  padding:12px 0 0;
+  border-top:1px solid transparent;
+  transition:transform .18s var(--ease),border-color .18s var(--ease);
+}
+.line-item:hover{transform:translateY(-2px);border-color:var(--violet)}
+
+/* News signal desk */
+.news-sec{
+  position:relative;
+  margin-top:-1px;
+  padding:138px 32px 146px;
+  overflow:hidden;
+  color:#f7f8fc;
+  background:#090c15;
+  border-top:0;
+  box-shadow:0 34px 90px rgba(8,12,23,.22) inset,0 -24px 70px rgba(8,12,23,.12);
+  clip-path:polygon(0 56px,100% 0,100% calc(100% - 46px),0 100%);
+}
+.news-sec::before{
+  display:none;
+}
+.news-sec::after{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:59px;
+  background:linear-gradient(90deg,#ff7a00,#ef4f6c,#7154e8);
+  clip-path:polygon(0 54px,100% 0,100% 3px,0 58px);
+  pointer-events:none;
+}
+.news-wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto}
+.news-head{
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);
+  align-items:end;
+  gap:72px;
+  margin-bottom:58px;
+  text-align:left;
+}
+.news-head .sec-hdr{
+  max-width:none;
+  margin:0;
+  text-align:left;
+}
+.news-head .sec-tag{color:#ff9a3d}
+.news-head .sec-h2{
+  max-width:760px;
+  margin:0;
+  color:#fff;
+  font-size:clamp(56px,7vw,94px);
+  line-height:.92;
+}
+.news-head .sec-sub{
+  max-width:520px;
+  margin:22px 0 0;
+  color:#c1cada;
+  font-size:16px;
+  line-height:1.7;
+}
+.news-live{
+  justify-self:end;
+  align-self:end;
+  height:auto;
+  padding:0 0 12px;
+  color:#ff8b80;
+  background:transparent;
+  border:0;
+  border-bottom:2px solid #ef4f6c;
+  border-radius:0;
+  box-shadow:none;
+  font-family:var(--font-data);
+  font-size:10px;
+  font-weight:500;
+  animation:none;
+}
+.news-live::before{display:none}
+.news-live-dot{
+  width:7px;
+  height:7px;
+  background:#ff665e;
+  box-shadow:0 0 18px rgba(255,102,94,.72);
+}
+.news-grid{
+  counter-reset:source;
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:0;
+  border-top:1px solid rgba(255,255,255,.22);
+  border-left:1px solid rgba(255,255,255,.22);
+  perspective:none;
+}
+.news-card,
+.news-card.feature,
+.news-card.wide{
+  --mx:50%;
+  --my:50%;
+  counter-increment:source;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  min-height:270px;
+  padding:30px;
+  overflow:hidden;
+  color:#f7f8fc;
+  background:
+    radial-gradient(circle at var(--mx) var(--my),rgba(113,84,232,.14),transparent 42%),
+    rgba(255,255,255,.035);
+  border:0;
+  border-right:1px solid rgba(255,255,255,.22);
+  border-bottom:1px solid rgba(255,255,255,.22);
+  border-radius:0;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+  transform:none;
+  transition:background .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease);
+}
+.news-card::before{
+  content:"0" counter(source);
+  position:absolute;
+  top:28px;
+  right:28px;
+  width:auto;
+  height:auto;
+  color:rgba(255,255,255,.58);
+  background:none;
+  font-family:var(--font-data);
+  font-size:10px;
+  font-weight:500;
+  opacity:1;
+}
+.news-card::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:auto;
+  top:0;
+  bottom:0;
+  width:3px;
+  border:0;
+  border-radius:0;
+  background:var(--card-accent-solid);
+  opacity:.85;
+  pointer-events:none;
+  transform:scaleY(.22);
+  transform-origin:top;
+  transition:transform .25s var(--ease);
+}
+.news-card:hover{
+  z-index:2;
+  transform:translateY(-6px);
+  color:#fff;
+  background:
+    radial-gradient(circle at var(--mx) var(--my),rgba(113,84,232,.17),transparent 44%),
+    #111725;
+  box-shadow:0 24px 54px rgba(0,0,0,.34);
+}
+.news-card:hover::after{transform:scaleY(1)}
+.news-card:nth-child(1){
+  grid-column:span 7;
+  min-height:350px;
+  background:
+    linear-gradient(140deg,rgba(255,122,0,.18),transparent 54%),
+    rgba(255,255,255,.035);
+}
+.news-card:nth-child(2){
+  grid-column:span 5;
+  min-height:350px;
+  background:
+    linear-gradient(140deg,rgba(113,84,232,.22),transparent 56%),
+    rgba(255,255,255,.035);
+}
+.news-card:nth-child(3),
+.news-card:nth-child(4),
+.news-card:nth-child(5){grid-column:span 4}
+.news-card.wide{
+  grid-column:span 12;
+  display:grid;
+  grid-template-columns:minmax(210px,.8fr) minmax(0,1.7fr) minmax(130px,.45fr);
+  align-items:center;
+  gap:46px;
+  min-height:190px;
+  background:
+    linear-gradient(90deg,rgba(239,79,108,.15),transparent 44%),
+    rgba(255,255,255,.035);
+}
+.news-card-top{
+  position:relative;
+  z-index:1;
+  align-items:flex-start;
+  margin-bottom:30px;
+}
+.news-card.wide .news-card-top{margin:0}
+.news-brand{flex-basis:auto}
+.news-logo,
+.news-card.feature .news-logo,
+.news-card.wide .news-logo{
+  width:190px;
+  height:66px;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.news-card:nth-child(1) .news-logo,
+.news-card:nth-child(2) .news-logo{width:230px;height:82px}
+.logo-wired{width:145px!important}
+.news-logo img{object-position:left center}
+.logo-mit img,
+.logo-wired img,
+.logo-vb img{filter:brightness(0) invert(1);opacity:.95}
+.logo-verge img{filter:brightness(1.35) saturate(1.12)}
+.logo-tc img,.logo-batch img{filter:brightness(1.12) saturate(1.08)}
+.news-badge{
+  height:23px;
+  margin-right:38px;
+  padding:0 8px;
+  color:var(--card-accent-solid);
+  background:rgba(255,255,255,.04);
+  border:1px solid currentColor;
+  border-radius:3px;
+  font-family:var(--font-data);
+  font-size:8px;
+  font-weight:500;
+}
+.news-preview,
+.news-card.feature .news-preview{
+  position:relative;
+  z-index:1;
+  max-width:620px;
+  margin:0 0 28px;
+  color:#c7cfdd;
+  font-family:var(--font-body);
+  font-size:14px;
+  font-weight:400;
+  line-height:1.7;
+}
+.news-card:nth-child(1) .news-preview,
+.news-card:nth-child(2) .news-preview{font-size:16px;max-width:540px}
+.news-card.wide .news-preview{margin:0;font-size:15px}
+.news-foot{
+  position:relative;
+  z-index:1;
+  margin-top:auto;
+  padding-top:18px;
+  color:var(--card-accent-solid);
+  border-top:1px solid rgba(255,255,255,.2);
+  font-family:var(--font-data);
+  font-size:10px;
+  font-weight:500;
+}
+.news-card.wide .news-foot{
+  justify-self:end;
+  width:100%;
+  margin:0;
+  padding:0;
+  border:0;
+}
+.news-card:hover .news-foot svg{transform:translate(4px,-4px)}
+[data-theme="dark"] .news-card{
+  color:#f7f8fc;
+  background:
+    radial-gradient(circle at var(--mx) var(--my),rgba(113,84,232,.14),transparent 42%),
+    rgba(255,255,255,.035);
+  border-right-color:rgba(255,255,255,.22);
+  border-bottom-color:rgba(255,255,255,.22);
+}
+[data-theme="dark"] .news-card:hover{
+  color:#fff;
+  background:
+    radial-gradient(circle at var(--mx) var(--my),rgba(113,84,232,.17),transparent 44%),
+    #111725;
+}
+[data-theme="dark"] .news-card:nth-child(1){
+  background:linear-gradient(140deg,rgba(255,122,0,.18),transparent 54%),rgba(255,255,255,.035)
+}
+[data-theme="dark"] .news-card:nth-child(2){
+  background:linear-gradient(140deg,rgba(113,84,232,.22),transparent 56%),rgba(255,255,255,.035)
+}
+[data-theme="dark"] .news-card.wide{
+  background:linear-gradient(90deg,rgba(239,79,108,.15),transparent 44%),rgba(255,255,255,.035)
+}
+[data-theme="dark"] .news-logo{
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+}
+[data-theme="dark"] .news-card::before{opacity:1}
+
+@media(max-width:900px){
+  .news-sec{
+    padding:120px 24px 126px;
+    clip-path:polygon(0 42px,100% 0,100% calc(100% - 34px),0 100%)
+  }
+  .news-sec::after{width:100%;height:45px;clip-path:polygon(0 40px,100% 0,100% 3px,0 44px)}
+  .news-head{grid-template-columns:1fr;gap:24px}
+  .news-live{justify-self:start}
+  .news-card:nth-child(1),
+  .news-card:nth-child(2),
+  .news-card:nth-child(3),
+  .news-card:nth-child(4),
+  .news-card:nth-child(5){grid-column:span 6}
+  .news-card.wide{grid-column:span 12;grid-template-columns:1fr;gap:20px}
+  .news-card.wide .news-foot{justify-self:start}
+}
+@media(max-width:640px){
+  .news-sec{
+    padding:96px 18px 102px;
+    clip-path:polygon(0 28px,100% 0,100% calc(100% - 24px),0 100%)
+  }
+  .news-sec::after{width:100%;height:31px;clip-path:polygon(0 26px,100% 0,100% 3px,0 30px)}
+  .news-sec::before{top:24px;font-size:54px}
+  .news-head{margin-bottom:38px}
+  .news-head .sec-h2{font-size:clamp(42px,13vw,62px)}
+  .news-head .sec-sub{font-size:14px}
+  .news-grid{grid-template-columns:1fr}
+  .news-card,
+  .news-card.feature,
+  .news-card.wide,
+  .news-card:nth-child(1),
+  .news-card:nth-child(2),
+  .news-card:nth-child(3),
+  .news-card:nth-child(4),
+  .news-card:nth-child(5){
+    grid-column:span 1;
+    min-height:0;
+    padding:24px 22px;
+  }
+  .news-card:nth-child(1),.news-card:nth-child(2){min-height:290px}
+  .news-card:nth-child(1) .news-logo,
+  .news-card:nth-child(2) .news-logo{width:min(210px,66vw);height:72px}
+  .news-logo,.news-card.feature .news-logo,.news-card.wide .news-logo{width:min(175px,62vw);height:58px}
+  .news-card-top{margin-bottom:22px}
+  .news-card:nth-child(1) .news-preview,
+  .news-card:nth-child(2) .news-preview,
+  .news-card.wide .news-preview{font-size:14px}
+  .news-card.wide{display:flex;gap:0}
+  .news-card.wide .news-card-top{margin-bottom:22px}
+  .news-card.wide .news-preview{margin-bottom:24px}
+  .news-card.wide .news-foot{padding-top:16px;border-top:1px solid rgba(255,255,255,.12)}
+}
+@media(hover:none) and (pointer:coarse){
+  .news-card:hover{transform:none}
+}
+/* FAQ and footer */
+.faq-sec{max-width:900px;padding:90px 32px 100px}
+.faq-list{border-top:1px solid var(--border);background:transparent}
+.faq-item{
+  position:relative;
+  padding:0 4px;
+  border-bottom:1px solid var(--border);
+  background:transparent;
+  transform:none;
+}
+.faq-item:hover{transform:none;background:linear-gradient(90deg,var(--surface),transparent)}
+.faq-q{font-size:17px;font-weight:700}
+.faq-ico{border-radius:4px}
+.footer{
+  padding:38px 32px;
+  background:var(--bg-2);
+  border-top-color:var(--border);
+  box-shadow:0 -16px 50px rgba(23,31,54,.04);
+}
+.foot-mapd-svg{filter:none}
+.foot-meta{font-family:var(--font-data);font-size:9px}
+
+/* Complete typography hierarchy */
+.line-item b,
+.read-action b,
+.news-source,
+.faq-q,
+#pn,
+#poptit,
+#tipn,
+.pnm,
+.cn,
+.chain-nm,
+.msr-nm{
+  font-family:var(--font-display);
+  font-weight:700;
+  letter-spacing:0;
+}
+.line-item b{
+  margin-bottom:6px;
+  color:var(--tx);
+  font-size:14px;
+  line-height:1.2;
+}
+.line-item span{
+  color:var(--tx-3);
+  font-family:var(--font-body);
+  font-size:12.5px;
+  font-weight:400;
+  line-height:1.55;
+}
+.read-action b{font-size:17px;line-height:1.25}
+.read-action span{
+  font-family:var(--font-body);
+  font-size:13px;
+  font-weight:400;
+  line-height:1.6;
+}
+.hero-sub,
+.sec-sub,
+.read-copy p,
+.map-disclaimer p,
+.news-preview,
+.faq-a,
+.pbtxt,
+.pbyk,
+.poprt,
+#tipt,
+.chain-role,
+.cd,
+.disc{
+  font-family:var(--font-body);
+  letter-spacing:0;
+}
+.news-preview{font-size:14px;font-weight:400;line-height:1.68}
+.news-card.feature .news-preview{font-size:14px}
+.faq-a{font-size:15px;font-weight:400;line-height:1.75}
+.pbtxt{font-size:11.5px;line-height:1.72}
+.pbyk,.chain-role,.cd{font-size:9px;line-height:1.5}
+.news-foot,
+.news-badge,
+.news-live,
+.md-kicker,
+.hs-lbl,
+.read-kpi span,
+.pblbl,
+.ml,
+.pst,
+.ct,
+.tag,
+.pbdg,
+#poptype,
+.poprl,
+#tipc,
+.msr-cat,
+#hint,
+#pm,
+.prole,
+.cmore{
+  font-family:var(--font-data);
+  letter-spacing:0;
+}
+.news-foot{font-size:10px;font-weight:500}
+.pblbl,.ml,.pst,.poprl{font-size:7.5px;font-weight:500}
+.ct,.pbdg,.msr-cat{font-weight:500}
+#pn{font-size:17px}
+#poptit{font-size:13px}
+#tipn{font-size:11px}
+.mv,.person,.popamt,.visit-btn,.news-btn,.fs-btn,.gate-msg,.msr-empty{
+  font-family:var(--font-body);
+  letter-spacing:0;
+}
+.theme-btn,.fb,#lbar,#msearch-input{font-family:var(--font-data)}
+
+/* Motion */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.up{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .nav{height:62px;padding:0 20px}
+  .nav::after{left:20px}
+  .hero{padding:112px 24px 56px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hs:nth-child(3){border-left:0;border-top:1px solid var(--border)}
+  .hs:nth-child(4){border-top:1px solid var(--border)}
+  .read-wrap{grid-template-columns:1fr;gap:38px}
+  .read-copy p{max-width:680px}
+}
+@media(max-width:640px){
+  .nav{height:56px;padding:0 14px}
+  .nav::after{left:14px;width:72px}
+  .mapd-svg-wrap{width:34px;height:34px}
+  .hero{padding:92px 18px 46px}
+  .hero-bg-glow{width:100vw;height:430px}
+  .hero-badge{gap:8px;margin-bottom:22px}
+  .hero-h1{font-size:clamp(39px,13vw,56px);line-height:.95}
+  .hero-h1 em::after{height:3px;margin-top:5px}
+  .hero-sub{font-size:15px}
+  .hero-ctas{margin-bottom:34px}
+  .hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hs{padding:15px 8px}
+  .hs + .hs{border-left:0}
+  .hs:nth-child(even){border-left:1px solid var(--border)}
+  .hs:nth-child(n+3){border-top:1px solid var(--border)}
+  .hs-num{font-size:30px}
+  .map-disclaimer{padding:14px 0 0}
+  .md-kicker{display:block;margin:0 0 6px}
+  .map-disclaimer p{display:block;font-size:10.5px}
+  .map-disclaimer a{font-size:12px}
+  .marquee-wrap{padding:13px 0}
+  .map-section{padding-top:70px}
+  .read-sec{padding:60px 20px 64px}
+  .read-actions{grid-template-columns:1fr}
+  .read-action,.read-action:last-child{min-height:0;border-left:0;border-right:0;border-top:1px solid var(--border)}
+  .read-action::before{margin-bottom:12px}
+  .news-sec{padding:74px 18px 82px}
+  .news-grid{grid-template-columns:1fr}
+  .news-card,.news-card.feature,.news-card.wide{grid-column:span 1;min-height:0}
+  .faq-sec{padding:70px 18px 78px}
+  .faq-q{font-size:15px}
+}
+@media(hover:none) and (pointer:coarse){
+  .news-card:hover,.read-action:hover,.hs:hover,.mq-logo-btn:hover{transform:none}
+}
 </style>
 </head>
 <body>
@@ -1165,7 +2199,7 @@ svg *{transition:none}
   <circle cx="67" cy="50" r="5" fill="var(--bg,#07080f)" stroke="#e8506a" stroke-width="2.8"></circle>
   <circle cx="62" cy="68" r="5" fill="var(--bg,#07080f)" stroke="#7c3aed" stroke-width="2.8"></circle>
 </svg></span>
-    <span style="font-weight:700;letter-spacing:-.01em">MAPD</span>
+    <span class="brand-word">MAPD</span>
   </a>
   <div class="nav-links">
     <a href="#map">Explore Map</a>
@@ -1188,9 +2222,9 @@ svg *{transition:none}
     <div class="hero-badge reveal up"><span class="hero-badge-main"><span class="hero-badge-dot"></span>MAPD Version 1.1</span><span class="hero-badge-sub">Updated June 2026</span></div>
     
     <h1 class="hero-h1 reveal up">The AI Ecosystem,<br><em>MAPD.</em></h1>
-    <p class="hero-sub reveal up">76 companies · 86 relationships · 10 ecosystem layers · $20 trillion+ in ecosystem value — all in one interactive intelligence map.</p>
+    <p class="hero-sub reveal up">76 companies. 86 relationships. 10 ecosystem layers. More than $20 trillion in ecosystem value, connected in one interactive intelligence map.</p>
     <div class="hero-ctas reveal up">
-      <a href="#map" class="btn-gold">Explore the Map ↓</a>
+      <a href="#map" class="btn-gold">Explore the Map</a>
       <a href="#features" class="btn-outline">How to Read It</a>
     </div>
     <div class="hero-stats reveal up">
@@ -1211,14 +2245,13 @@ svg *{transition:none}
 <div class="marquee-wrap">
   <div class="marquee-track" id="mq"></div>
 </div>
-</div>
 
 <!-- ══ MAP ════════════════════════════════════════════════════════════ -->
 <section id="map" class="map-section">
   <div class="sec-hdr reveal up">
     <div class="sec-tag">MAPD Interactive Map</div>
     <h2 class="sec-h2 syn">Explore the AI Universe</h2>
-    <p class="sec-sub">Click any node to reveal company intelligence. Drag to pan, scroll to zoom. Every line tells a story.</p>
+    <p class="sec-sub">Click any node to reveal company intelligence. Drag to pan and scroll to zoom. Every line tells a story.</p>
   </div>
   <div class="map-top-bar">
     <button id="fs-btn" class="fs-btn" onclick="toggleFullscreen()">
@@ -1298,7 +2331,7 @@ svg *{transition:none}
         <button class="zb" onclick="zReset()">⊙</button>
         <button class="zb" onclick="zOut()">−</button>
       </div>
-      <div id="hint">Drag to pan · Scroll to zoom · Click any node or line</div>
+      <div id="hint">Drag to pan. Scroll to zoom. Click any node or line.</div>
     </div>
   </div>
 </section>
@@ -1311,8 +2344,8 @@ svg *{transition:none}
       <h2 class="sec-h2 syn">Start with a node, then follow the power.</h2>
       <p>Each dot is a company or app. Click a dot to open its story, click a line to see the relationship, and use the filters when you want one layer instead of the whole AI ecosystem at once.</p>
       <div class="read-kpis" aria-label="Map scope">
-        <div class="read-kpi"><strong>64</strong><span>Companies &amp; apps</span></div>
-        <div class="read-kpi"><strong>73</strong><span>Relationships</span></div>
+        <div class="read-kpi"><strong>76</strong><span>Companies &amp; apps</span></div>
+        <div class="read-kpi"><strong>86</strong><span>Relationships</span></div>
         <div class="read-kpi"><strong>10</strong><span>Layers</span></div>
         <div class="read-kpi"><strong>$20T+</strong><span>Ecosystem value</span></div>
       </div>
@@ -1354,11 +2387,11 @@ svg *{transition:none}
   <div class="news-wrap">
     <div class="news-head">
       <div class="sec-hdr reveal">
-        <div class="sec-tag">Recent AI News</div>
-        <h2 class="sec-h2 syn">Where to Track AI</h2>
-        <p class="sec-sub">Six high-signal sources for model launches, funding rounds, policy moves, research shifts, and the companies shaping the map.</p>
+        <div class="sec-tag">MAPD Signal Desk</div>
+        <h2 class="sec-h2 syn">Where AI Moves First</h2>
+        <p class="sec-sub">Six sources worth opening for model launches, funding, policy, research, and the companies changing the map.</p>
       </div>
-      <div class="news-live"><span class="news-live-dot"></span>Live sources</div>
+      <div class="news-live"><span class="news-live-dot"></span>6 live sources</div>
     </div>
     <div class="news-grid">
       <a class="news-card gold feature reveal" href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank" rel="noopener noreferrer">
@@ -1433,10 +2466,10 @@ svg *{transition:none}
   <div class="faq-list">
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How current is this data?<div class="faq-ico">+</div></button><div class="faq-a">Updated June 2026. Major investments, ownership relationships, model dependencies, and valuation language have been cross-checked. AI moves fast, so some estimates may shift. When in doubt, company websites and SEC filings are the source of truth.</div></div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What do the different colored lines mean?<div class="faq-ico">+</div></button><div class="faq-a">There are five line types: Gold solid lines = financial investment (money changing hands). Teal long-dashed lines = strategic partnerships. Gray dotted lines = alumni spinoffs (key people who left to found something new). Blue solid lines = ownership (company owns this product). Green short-dashed lines = AI powering a product. Click any line to get the full story behind it.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why isn't [company X] on the map?<div class="faq-ico">+</div></button><div class="faq-a">The map prioritizes the highest-impact nodes in each layer — companies that represent a distinct capability or relationship in the ecosystem. Some companies were excluded for being subsidiaries already represented by their parent, being too niche for a general audience, or because their AI story wasn't materially different from existing nodes. This is an evolving project and new nodes can always be added.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why isn't [company X] on the map?<div class="faq-ico">+</div></button><div class="faq-a">The map prioritizes the highest impact nodes in each layer. These companies represent a distinct capability or relationship in the ecosystem. Some companies were excluded because a parent company already represents them, because they are too niche for a general audience, or because their AI story is already represented by another node. This is an evolving project and new nodes can always be added.</div></div>
     <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I navigate the map on mobile?<div class="faq-ico">+</div></button><div class="faq-a">On mobile, use two fingers to pinch-zoom and one finger to pan. Tap any node to open its detail panel, which slides in from the right. Tap any connecting line for the relationship story. Use the filter buttons at the top to isolate specific layers of the ecosystem.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why is Nvidia so central?<div class="faq-ico">+</div></button><div class="faq-a">Nvidia makes the GPU chips that train and run ALL modern AI — without them, no modern AI exists at scale. Their H100 and H200 GPUs are essentially the oil wells of the AI economy. Nvidia has also strategically invested in or partnered with nearly every major AI company: OpenAI, Anthropic, Meta, xAI, CoreWeave, Perplexity, HuggingFace, Cohere, and Mistral — making them the most connected node on the map.</div></div>
-    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I download or share this?<div class="faq-ico">+</div></button><div class="faq-a">The HTML file is fully self-contained — all logos, data, and code are embedded. You can save the page locally and it will work completely offline. For presentations, you can also take a screenshot of any state of the map (including with a specific company panel open).</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Why is Nvidia so central?<div class="faq-ico">+</div></button><div class="faq-a">Nvidia makes the GPU chips that train and run nearly all modern AI. Without them, modern AI cannot operate at scale. Their H100 and H200 GPUs are essentially the oil wells of the AI economy. Nvidia has also strategically invested in or partnered with nearly every major AI company, including OpenAI, Anthropic, Meta, xAI, CoreWeave, Perplexity, HuggingFace, Cohere, and Mistral. This makes Nvidia the most connected node on the map.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I download or share this?<div class="faq-ico">+</div></button><div class="faq-a">The HTML file is fully self contained. All logos, data, and code are embedded. You can save the page locally and it will work completely offline. For presentations, you can also take a screenshot of any state of the map, including a specific company panel.</div></div>
   </div>
 </section>
 
@@ -1492,10 +2525,10 @@ svg *{transition:none}
   <circle cx="67" cy="50" r="5" fill="var(--bg,#07080f)" stroke="#e8506a" stroke-width="2.8"></circle>
   <circle cx="62" cy="68" r="5" fill="var(--bg,#07080f)" stroke="#7c3aed" stroke-width="2.8"></circle>
 </svg></span>
-      MAPD
-    </div> AI Ecosystem 2026</div>
-    <div class="foot-meta"><span class="live-dot"></span>© 2026 MAPD · Updated June 2026 · 76 companies · 86 relationships</div>
-  
+      <span class="brand-word">MAPD</span>
+    </div>
+    <div class="foot-meta"><span class="live-dot"></span>AI Ecosystem 2026. Updated June 2026. 76 companies. 86 relationships.</div>
+  </div>
 </footer>
 
 <!-- ══ POPUPS & TOOLTIPS ══════════════════════════════════════════════ -->
@@ -1615,7 +2648,7 @@ document.querySelectorAll('.stat-card').forEach(el=>ro.observe(el));
 
 
 // ═══════════════════════════════════════════════════════
-// LOGO RENDERER — SVG-drawn logos, no external dependencies
+// LOGO RENDERER , SVG-drawn logos, no external dependencies
 // ═══════════════════════════════════════════════════════
 const LOGOS={
   asml:"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20128%20128%22%3E%3Crect%20width%3D%22128%22%20height%3D%22128%22%20fill%3D%22white%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%231f5fae%22%20stroke-width%3D%224%22%3E%3Cpath%20d%3D%22M18%2064l22-22%2022%2022-22%2022z%22%2F%3E%3Cpath%20d%3D%22M24%2058l24%2024M32%2050l24%2024M16%2066l24%2024%22%2F%3E%3C%2Fg%3E%3Ctext%20x%3D%2245%22%20y%3D%2275%22%20font-family%3D%22Arial%2CHelvetica%2Csans-serif%22%20font-size%3D%2234%22%20font-weight%3D%22900%22%20font-style%3D%22italic%22%20fill%3D%22%231f5fae%22%3EASML%3C%2Ftext%3E%3C%2Fsvg%3E",
@@ -1798,7 +2831,7 @@ const LT={
   powers:{c:"#16a34a",w:2,dash:"6,4",lbl:"Powers"}
 };
 
-// Virtual canvas — large for no overlap
+// Virtual canvas , large for no overlap
 const VW=2600, VH=2000;
 
 // ═══ COMPANY NODES ═══════════════════════════════════
@@ -1810,19 +2843,19 @@ const COS=[
  youknow:"Gaming GPUs · Every AI you've ever used",
  people:[{n:"Jensen Huang",r:"CEO/Co-founder"},{n:"Colette Kress",r:"CFO"}],
  products:["H100/H200 GPUs","Blackwell B200 GPUs","CUDA Platform","DGX Supercomputers"],
- models:["Nemotron-4 340B"],founded:1993,hq:"Santa Clara, CA",val:"~$3–3.5T market cap",
+ models:["Nemotron-4 340B"],founded:1993,hq:"Santa Clara, CA",val:"~$3 to 3.5T market cap",
  chain:[{id:"nvidia",role:"Makes the GPU chips",col:"#334155"}]},
 {id:"amd",url:"https://www.amd.com",name:"AMD",cat:"infrastructure",r:36,xn:.5,yn:.05,hot:false,
- tagline:"Nvidia's only credible GPU competitor — MI300X used by Microsoft & Meta",
+ tagline:"Nvidia's only credible GPU competitor , MI300X used by Microsoft & Meta",
  plain:"AMD's MI300X GPU is used by Microsoft Azure, Meta, and others as a Nvidia alternative. ROCm software platform competes with CUDA but is years behind in ecosystem. Lisa Su transformed AMD from near-bankruptcy to a $200B+ company. Growing AI market share but Nvidia still dominates.",
  youknow:"AMD Ryzen CPUs · Radeon GPUs · MI300X AI chips",
  people:[{n:"Lisa Su",r:"CEO"},{n:"Forrest Norrod",r:"GM Data Center"}],
  products:["MI300X GPU","Instinct Series","EPYC CPUs","ROCm Platform"],
- models:[],founded:1969,hq:"Santa Clara, CA",val:"~$200–260B market cap",
+ models:[],founded:1969,hq:"Santa Clara, CA",val:"~$200 to 260B market cap",
  chain:[{id:"amd",role:"GPU alternative to Nvidia",col:"#334155"}]},
 	{id:"coreweave",url:"https://www.coreweave.com",name:"CoreWeave",cat:"infrastructure",r:36,xn:.8,yn:.05,hot:false,
-	 tagline:"Nvidia-backed GPU cloud — OpenAI's biggest compute source in 2025",
-	 plain:"CoreWeave is a GPU-first cloud provider. In 2025, OpenAI shifted major workloads FROM Azure TO CoreWeave — making CoreWeave OpenAI's largest external compute provider. Nvidia invested ~$100M. Microsoft invested $1.5B after the OpenAI shift. IPO'd in 2025 at $35B+ valuation.",
+	 tagline:"Nvidia-backed GPU cloud , OpenAI's biggest compute source in 2025",
+	 plain:"CoreWeave is a GPU-first cloud provider. In 2025, OpenAI shifted major workloads FROM Azure TO CoreWeave , making CoreWeave OpenAI's largest external compute provider. Nvidia invested ~$100M. Microsoft invested $1.5B after the OpenAI shift. IPO'd in 2025 at $35B+ valuation.",
 	 youknow:"The cloud running ChatGPT (alongside Azure)",
 	 people:[{n:"Michael Intrator",r:"CEO/Co-founder"},{n:"Brian Venturo",r:"CTO/Co-founder"}],
 	 products:["H100/H200 GPU Cloud","CoreWeave Cloud (CWC)"],
@@ -1858,7 +2891,7 @@ const COS=[
 	 youknow:"Huge wafer-scale AI chips",
 	 people:[{n:"Andrew Feldman",r:"CEO/Co-founder"}],
 	 products:["Wafer-Scale Engine","CS-3 AI supercomputer","Cerebras Inference"],
-	 models:[],founded:2015,hq:"Sunnyvale, CA",val:"Private — multibillion-dollar valuation",
+	 models:[],founded:2015,hq:"Sunnyvale, CA",val:"Private , multibillion-dollar valuation",
 	 chain:[{id:"cerebras",role:"Alternative AI accelerator",col:"#334155"}]},
 	{id:"nebius",url:"https://nebius.com",name:"Nebius",cat:"infrastructure",r:36,xn:.92,yn:.05,hot:false,
 	 tagline:"European AI cloud building GPU clusters for model builders",
@@ -1866,21 +2899,21 @@ const COS=[
 	 youknow:"AI cloud capacity outside AWS/Azure/GCP",
 	 people:[{n:"Arkady Volozh",r:"Founder & CEO"}],
 	 products:["Nebius AI Cloud","GPU clusters","Managed AI infrastructure"],
-	 models:[],founded:2023,hq:"Amsterdam, Netherlands",val:"Public company — AI infrastructure focus",
+	 models:[],founded:2023,hq:"Amsterdam, Netherlands",val:"Public company , AI infrastructure focus",
 	 chain:[{id:"nvidia",role:"GPU supply",col:"#334155"},{id:"nebius",role:"AI cloud",col:"#334155"}]},
 
 // ── TIER 2: BIG TECH  yn≈0.114 ──────────────────────
 {id:"microsoft",url:"https://www.microsoft.com",name:"Microsoft",cat:"hyperscaler",r:36,xn:.076,yn:.139,hot:false,
- tagline:"Bet $13B on OpenAI — AI now in every Microsoft product you use",
+ tagline:"Bet $13B on OpenAI , AI now in every Microsoft product you use",
  plain:"Microsoft invested ~$13B in OpenAI for ~49% of profits. OpenAI runs exclusively on Azure. GitHub Copilot, Word Copilot, Excel, Teams, Bing AI all powered by GPT. Owns GitHub ($7.5B, 2018) and LinkedIn ($26.2B, 2016). Also invested €16M in Mistral. CEO Satya Nadella pivoted the entire company around AI.",
  youknow:"Word AI · GitHub Copilot · LinkedIn · Bing AI · Teams Copilot",
  people:[{n:"Satya Nadella",r:"CEO"},{n:"Kevin Scott",r:"CTO & EVP AI"}],
  products:["Azure (cloud)","Microsoft 365 Copilot","GitHub Copilot","LinkedIn","Bing AI"],
- models:[],founded:1975,hq:"Redmond, WA",val:"~$3.2–3.5T market cap",
+ models:[],founded:1975,hq:"Redmond, WA",val:"~$3.2 to 3.5T market cap",
  chain:[{id:"azure",url:"https://azure.microsoft.com",role:"Microsoft's cloud",col:"#1e3a8a"},{id:"microsoft",role:"$13B investor",col:"#1d4ed8"},{id:"openai",url:"https://www.openai.com",role:"Makes GPT models",col:"#5b21b6"}]},
 {id:"google",url:"https://www.google.com",name:"Google",cat:"hyperscaler",r:36,xn:.225,yn:.139,hot:false,
- tagline:"Invented Transformer AI in 2017 — panicked when ChatGPT launched",
- plain:"Google engineers wrote 'Attention Is All You Need' (2017) — the paper that created modern AI. Own Google DeepMind. Invested ~$300M in Anthropic and ~$100M in Runway. Built Gemini models. Runs Google Cloud. Despite inventing the field, ChatGPT caused 'code red' at Google HQ in 2022.",
+ tagline:"Invented Transformer AI in 2017 , panicked when ChatGPT launched",
+ plain:"Google engineers wrote 'Attention Is All You Need' (2017) , the paper that created modern AI. Own Google DeepMind. Invested ~$300M in Anthropic and ~$100M in Runway. Built Gemini models. Runs Google Cloud. Despite inventing the field, ChatGPT caused 'code red' at Google HQ in 2022.",
  youknow:"Google Search AI · Gemini · Gmail AI · YouTube · Google Lens",
  people:[{n:"Sundar Pichai",r:"CEO"},{n:"Demis Hassabis",r:"CEO, Google DeepMind"}],
  products:["Gemini AI","Google DeepMind","Google Cloud/Vertex AI","NotebookLM","Veo 2","YouTube"],
@@ -1888,30 +2921,30 @@ const COS=[
  founded:1998,hq:"Mountain View, CA",val:"~$2.3T market cap",
  chain:[{id:"google_cloud",url:"https://cloud.google.com",role:"Google's cloud",col:"#1e3a8a"},{id:"google",role:"Builds AI + funds others",col:"#1d4ed8"}]},
 {id:"amazon",url:"https://www.amazon.com",name:"Amazon",cat:"hyperscaler",r:36,xn:.375,yn:.139,hot:false,
- tagline:"Runs AWS + backed Anthropic $4B — sells AI access to the entire business world",
+ tagline:"Runs AWS + backed Anthropic $4B , sells AI access to the entire business world",
  plain:"Amazon's AI strategy: be the cloud marketplace that hosts everyone else's AI. AWS Bedrock offers Claude, Llama, Mistral and 30+ models. Committed $4B to Anthropic, making AWS Anthropic's primary cloud. Building own Nova models and rebuilding Alexa from scratch.",
  youknow:"Alexa · Amazon shopping AI · AWS (powers most of the internet)",
  people:[{n:"Andy Jassy",r:"CEO"},{n:"Rohit Prasad",r:"SVP of AGI"}],
  products:["AWS (cloud)","AWS Bedrock","Amazon Nova","Alexa AI","Amazon Q","SageMaker"],
  models:["Amazon Nova Micro","Nova Lite","Nova Pro"],
- founded:1994,hq:"Seattle, WA",val:"~$2.0–2.2T market cap",
+ founded:1994,hq:"Seattle, WA",val:"~$2.0 to 2.2T market cap",
  chain:[{id:"aws",url:"https://aws.amazon.com",role:"Amazon's cloud",col:"#1e3a8a"},{id:"amazon",role:"$4B investor",col:"#1d4ed8"},{id:"anthropic",url:"https://www.anthropic.com",role:"Claude AI",col:"#5b21b6"}]},
 {id:"meta",url:"https://www.meta.com",name:"Meta",cat:"hyperscaler",r:36,xn:.525,yn:.139,hot:false,
- tagline:"Owns Facebook+Instagram+WhatsApp+Threads — gives AI away FREE",
+ tagline:"Owns Facebook+Instagram+WhatsApp+Threads , gives AI away FREE",
  plain:"Meta owns every major social platform except TikTok and X. Strategy: open-source LLaMA for free because Meta earns from ads not AI. Spending $60B+ on AI in 2025. LLaMA is the world's most-downloaded open-source AI. Buying 350K+ Nvidia H100 GPUs. Yann LeCun (Chief AI Scientist) publicly disagrees with LLM-as-AGI narrative.",
- youknow:"Facebook · Instagram · WhatsApp · Threads · Messenger — all Meta",
+ youknow:"Facebook · Instagram · WhatsApp · Threads · Messenger , all Meta",
  people:[{n:"Mark Zuckerberg",r:"CEO"},{n:"Yann LeCun",r:"Chief AI Scientist"}],
  products:["Meta AI (in all Meta apps)","LLaMA (free open-source)","FAIR Research Lab","Ray-Ban Meta Glasses"],
  models:["Llama 4 Maverick","Llama 4 Scout","Llama 3.3 70B"],
- founded:2004,hq:"Menlo Park, CA",val:"~$1.5–1.7T market cap",
+ founded:2004,hq:"Menlo Park, CA",val:"~$1.5 to 1.7T market cap",
  chain:[{id:"nvidia",role:"350K+ H100 GPUs",col:"#334155"},{id:"meta",role:"Owns all Meta social apps",col:"#1d4ed8"}]},
 	{id:"apple",url:"https://www.apple.com",name:"Apple",cat:"hyperscaler",r:36,xn:.665,yn:.139,hot:false,
-	 tagline:"Privacy-first on-device AI — ChatGPT powers Siri for hard questions",
-	 plain:"Apple runs AI on-device via Neural Engine chips. Apple Intelligence (iOS 18+) handles writing, photos, and Siri locally. For complex questions, Siri routes to ChatGPT — with user permission, Apple says they never see it. Most private approach to AI of any Big Tech company.",
+	 tagline:"Privacy-first on-device AI , ChatGPT powers Siri for hard questions",
+	 plain:"Apple runs AI on-device via Neural Engine chips. Apple Intelligence (iOS 18+) handles writing, photos, and Siri locally. For complex questions, Siri routes to ChatGPT , with user permission, Apple says they never see it. Most private approach to AI of any Big Tech company.",
 	 youknow:"Siri · iPhone AI features · Photo cleanup · Genmoji · Apple Intelligence",
 	 people:[{n:"Tim Cook",r:"CEO"},{n:"John Giannandrea",r:"SVP Machine Learning"}],
 	 products:["Apple Intelligence","Siri (rebuilt)","Private Cloud Compute","Core ML"],
-	 models:[],founded:1976,hq:"Cupertino, CA",val:"~$3.3–3.6T market cap",
+	 models:[],founded:1976,hq:"Cupertino, CA",val:"~$3.3 to 3.6T market cap",
 	 chain:[{id:"apple",role:"On-device AI",col:"#1d4ed8"},{id:"openai",role:"ChatGPT backs up Siri",col:"#5b21b6"}]},
 	{id:"tesla",url:"https://www.tesla.com/AI",name:"Tesla",cat:"hyperscaler",r:36,xn:.82,yn:.139,hot:false,
 	 tagline:"Autonomy, robotics, data, and AI compute at physical-world scale",
@@ -1924,7 +2957,7 @@ const COS=[
 
 	// ── TIER 3: CLOUD INFRASTRUCTURE  yn≈0.198 ──────────
 {id:"aws",name:"AWS",cat:"cloud",r:36,xn:.11,yn:.222,hot:false,
- tagline:"World's largest cloud — Anthropic's primary home, 31% market share",
+ tagline:"World's largest cloud , Anthropic's primary home, 31% market share",
  plain:"Amazon Web Services is the world's #1 cloud provider. All Anthropic training and inference runs on AWS. AWS Bedrock is the enterprise AI model marketplace. Trainium and Inferentia are Amazon's custom AI chips reducing Nvidia dependence.",
  youknow:"Cloud running Netflix, Airbnb, and most of the modern internet",
  people:[{n:"Matt Garman",r:"CEO of AWS"}],
@@ -1932,7 +2965,7 @@ const COS=[
  models:[],founded:2006,hq:"Seattle, WA",val:"~$100B annual revenue",
  chain:[{id:"aws",role:"Anthropic's cloud + AI model marketplace",col:"#1e3a8a"}]},
 {id:"azure",name:"Azure",cat:"cloud",r:36,xn:.385,yn:.222,hot:false,
- tagline:"Microsoft's cloud — exclusive home of OpenAI, runs all ChatGPT infrastructure",
+ tagline:"Microsoft's cloud , exclusive home of OpenAI, runs all ChatGPT infrastructure",
  plain:"Azure is OpenAI's exclusive cloud partner. ALL ChatGPT inference runs on Azure. Azure OpenAI Service lets enterprises access GPT-4 through Azure. Second-largest cloud (~24% share). CoreWeave now taking some overflow OpenAI workloads in 2025.",
  youknow:"The cloud running ChatGPT and Microsoft AI products",
  people:[{n:"Scott Guthrie",r:"EVP Cloud + AI"}],
@@ -1940,7 +2973,7 @@ const COS=[
  models:[],founded:2010,hq:"Redmond, WA",val:"~$80B+ annual revenue",
  chain:[{id:"azure",role:"OpenAI's exclusive cloud provider",col:"#1e3a8a"}]},
 {id:"google_cloud",name:"Google Cloud",cat:"cloud",r:36,xn:.66,yn:.222,hot:false,
- tagline:"Google's cloud — hosts Vertex AI, Anthropic backup cloud, fastest growing",
+ tagline:"Google's cloud , hosts Vertex AI, Anthropic backup cloud, fastest growing",
  plain:"Google Cloud Platform (GCP) runs all Google AI products globally. Vertex AI is the enterprise AI platform. Third in cloud market share (~11%) but growing fastest. TPU chips offer Nvidia alternatives. Anthropic uses GCP as secondary cloud. DeepSeek R1 available on Vertex AI.",
  youknow:"Cloud running all Google products · Vertex AI enterprise platform",
  people:[{n:"Thomas Kurian",r:"CEO of Google Cloud"}],
@@ -1950,17 +2983,17 @@ const COS=[
 
 // ── TIER 4: FOUNDATION AI MODELS  yn≈0.288 ──────────
 {id:"openai",name:"OpenAI",cat:"independent",r:36,xn:.052,yn:.32,hot:true,
- tagline:"Built ChatGPT — started the generative AI revolution November 2022",
- plain:"OpenAI launched ChatGPT in November 2022, making AI mainstream overnight — 100M+ weekly users. Microsoft invested ~$13B. In Nov 2023 the board fired CEO Sam Altman → rehired him 5 days later after nearly the entire company threatened to quit. Also makes DALL-E, Sora, Whisper. In 2025, OpenAI moved compute from Azure to CoreWeave.",
+ tagline:"Built ChatGPT , started the generative AI revolution November 2022",
+ plain:"OpenAI launched ChatGPT in November 2022, making AI mainstream overnight , 100M+ weekly users. Microsoft invested ~$13B. In Nov 2023 the board fired CEO Sam Altman → rehired him 5 days later after nearly the entire company threatened to quit. Also makes DALL-E, Sora, Whisper. In 2025, OpenAI moved compute from Azure to CoreWeave.",
  youknow:"ChatGPT · DALL-E · Sora video · Microsoft Copilot (all OpenAI-powered)",
  people:[{n:"Sam Altman",r:"CEO"},{n:"Greg Brockman",r:"President"}],
  products:["ChatGPT","GPT API","DALL-E 3","Sora (video)","Whisper (speech)","Operator (agents)"],
  models:["GPT-4o","o1 (reasoning)","o3","o4-mini","GPT-4.1","DALL-E 3","Sora"],
- founded:2015,hq:"San Francisco, CA",val:"~$300–340B",
+ founded:2015,hq:"San Francisco, CA",val:"~$300 to 340B",
  chain:[{id:"coreweave",role:"Primary compute (2025)",col:"#334155"},{id:"azure",role:"Microsoft cloud",col:"#1e3a8a"},{id:"microsoft",role:"$13B investor",col:"#1d4ed8"},{id:"openai",role:"Builds AI models",col:"#5b21b6"}]},
 {id:"anthropic",name:"Anthropic",cat:"independent",r:36,xn:.155,yn:.32,hot:true,
- tagline:"Safety-focused AI — makes Claude — founded by 9 ex-OpenAI researchers",
- plain:"Founded 2021 by Dario Amodei, Daniela Amodei, and 7 others who LEFT OpenAI over safety concerns. Amazon invested $4B (primary cloud on AWS). Google invested $300M. Claude is the preferred AI for Cursor, many coding tools, and enterprises. Invented Constitutional AI — training AI with written principles.",
+ tagline:"Safety-focused AI , makes Claude , founded by 9 ex-OpenAI researchers",
+ plain:"Founded 2021 by Dario Amodei, Daniela Amodei, and 7 others who LEFT OpenAI over safety concerns. Amazon invested $4B (primary cloud on AWS). Google invested $300M. Claude is the preferred AI for Cursor, many coding tools, and enterprises. Invented Constitutional AI , training AI with written principles.",
  youknow:"Claude.ai · This conversation · Cursor uses Claude · Many enterprises",
  people:[{n:"Dario Amodei",r:"CEO"},{n:"Daniela Amodei",r:"President"},{n:"Chris Olah",r:"Safety Research"}],
  products:["Claude.ai","Claude API","Claude for Enterprise","Claude Code"],
@@ -1968,7 +3001,7 @@ const COS=[
  founded:2021,hq:"San Francisco, CA",val:"~$61B",
  chain:[{id:"aws",role:"$4B investment + cloud",col:"#1e3a8a"},{id:"google_cloud",role:"$300M + cloud",col:"#1e3a8a"},{id:"anthropic",role:"Builds Claude AI",col:"#5b21b6"}]},
 {id:"xai",url:"https://x.ai",name:"xAI",cat:"independent",r:36,xn:.248,yn:.32,hot:false,
- tagline:"Elon Musk's AI inside X — real-time access to every tweet",
+ tagline:"Elon Musk's AI inside X , real-time access to every tweet",
  plain:"Elon Musk co-founded OpenAI, left in 2018, sued them in 2024. Founded xAI in 2023. Grok is built into X (Twitter) with unique real-time access to ALL tweets. Built Colossus: 100,000 Nvidia H100 GPUs in Memphis in just 122 days. Also owns X/Twitter ($44B).",
  youknow:"Grok chatbot inside X/Twitter",
  people:[{n:"Elon Musk",r:"CEO/Founder"}],
@@ -1977,7 +3010,7 @@ const COS=[
  founded:2023,hq:"Memphis, TN / San Francisco",val:"~$50B",
  chain:[{id:"nvidia",role:"100K H100 GPUs (Colossus)",col:"#334155"},{id:"xai",role:"Builds Grok AI",col:"#5b21b6"}]},
 {id:"mistral",url:"https://mistral.ai",name:"Mistral AI",cat:"independent",r:36,xn:.335,yn:.32,hot:false,
- tagline:"Europe's leading AI lab — efficient models, GDPR-friendly, backed by Nvidia + Microsoft",
+ tagline:"Europe's leading AI lab , efficient models, GDPR-friendly, backed by Nvidia + Microsoft",
  plain:"French AI lab by ex-Google DeepMind and Meta researchers. Small but powerful models (Mistral 7B outperformed larger competitors). European data sovereignty choice. Microsoft invested €16M. Nvidia also invested. Le Chat chatbot competes with ChatGPT in Europe.",
  youknow:"Le Chat chatbot · Codestral (coding AI) · European ChatGPT alternative",
  people:[{n:"Arthur Mensch",r:"CEO"},{n:"Guillaume Lample",r:"CSO"}],
@@ -1986,8 +3019,8 @@ const COS=[
  founded:2023,hq:"Paris, France",val:"~$6B",
  chain:[{id:"mistral",role:"European AI lab",col:"#5b21b6"}]},
 {id:"cohere",url:"https://cohere.com",name:"Cohere",cat:"independent",r:36,xn:.415,yn:.32,hot:false,
- tagline:"Enterprise AI for banks & hospitals — CEO co-wrote the Transformer paper",
- plain:"Enterprise-only AI. CEO Aidan Gomez co-wrote 'Attention Is All You Need' (2017) — the paper that invented modern AI. Backed by Oracle, Salesforce, Nvidia. Command R+ is top for enterprise document retrieval and RAG (retrieval-augmented generation).",
+ tagline:"Enterprise AI for banks & hospitals , CEO co-wrote the Transformer paper",
+ plain:"Enterprise-only AI. CEO Aidan Gomez co-wrote 'Attention Is All You Need' (2017) , the paper that invented modern AI. Backed by Oracle, Salesforce, Nvidia. Command R+ is top for enterprise document retrieval and RAG (retrieval-augmented generation).",
  youknow:"Powers AI inside large banks, hospitals, and enterprises",
  people:[{n:"Aidan Gomez",r:"CEO (co-authored Transformer paper)"}],
  products:["Command R+","Embed v3","Rerank","North (enterprise)"],
@@ -1995,50 +3028,50 @@ const COS=[
  founded:2019,hq:"Toronto, Canada",val:"~$5.5B",
  chain:[{id:"cohere",role:"Enterprise AI specialist",col:"#5b21b6"}]},
 {id:"ssi",url:"https://ssi.inc",name:"Safe Superintelligence",cat:"independent",r:36,xn:.492,yn:.32,hot:false,
- tagline:"Ilya Sutskever's $32B mystery lab — zero products, pure safety research",
+ tagline:"Ilya Sutskever's $32B mystery lab , zero products, pure safety research",
  plain:"Founded by Ilya Sutskever (trained GPT-4) after leaving OpenAI in 2024. ONE goal: safe superintelligence. No products. Raised $1B immediately. Valued at $32B. Entire AI world watches this space.",
- youknow:"Nothing public yet — most anticipated AI lab in the world",
+ youknow:"Nothing public yet , most anticipated AI lab in the world",
  people:[{n:"Ilya Sutskever",r:"CEO (trained GPT-4)"},{n:"Daniel Gross",r:"Co-founder"}],
  products:["No public products"],models:[],
  founded:2024,hq:"Palo Alto, CA",val:"~$32B",
  chain:[{id:"openai",role:"Where Ilya came from",col:"#5b21b6"},{id:"ssi",role:"AGI safety research",col:"#5b21b6"}]},
 
-// CHINESE AI — right column  yn≈0.288–0.375
+// CHINESE AI , right column  yn≈0.288 to 0.375
 {id:"deepseek",url:"https://www.deepseek.com",name:"DeepSeek",cat:"chinese",r:36,xn:.735,yn:.32,hot:true,
- tagline:"Crashed Nvidia's stock $590B in one day — January 20, 2025",
- plain:"Released DeepSeek R1 on Jan 20 2025 matching OpenAI's best model for ~$5.6M training (vs OpenAI's $100M+). Nvidia stock crashed 17%, $590B wiped — largest single-day market cap loss in history. R1 is free and open-source. Founded by quant hedge fund High-Flyer Capital.",
+ tagline:"Crashed Nvidia's stock $590B in one day , January 20, 2025",
+ plain:"Released DeepSeek R1 on Jan 20 2025 matching OpenAI's best model for ~$5.6M training (vs OpenAI's $100M+). Nvidia stock crashed 17%, $590B wiped , largest single-day market cap loss in history. R1 is free and open-source. Founded by quant hedge fund High-Flyer Capital.",
  youknow:"The AI that triggered January 2025's historic market crash",
  people:[{n:"Liang Wenfeng",r:"CEO (also runs High-Flyer hedge fund)"}],
  products:["DeepSeek Chat (free)","DeepSeek API","DeepSeek-Coder"],
  models:["DeepSeek R1 (open-source)","DeepSeek V3","DeepSeek V3.5"],
- founded:2023,hq:"Hangzhou, China",val:"Private — undisclosed",
+ founded:2023,hq:"Hangzhou, China",val:"Private , undisclosed",
  chain:[{id:"deepseek",role:"Chinese AI challenger",col:"#c2410c"}]},
 {id:"bytedance",url:"https://www.bytedance.com",name:"ByteDance",cat:"chinese",r:36,xn:.868,yn:.32,hot:false,
- tagline:"TikTok's parent — algorithm that changed how a billion people consume content",
- plain:"ByteDance owns TikTok. The For You Page AI has reshaped global attention spans — history's most impactful AI deployment. Also: Doubao chatbot, CapCut AI video editor, Wan AI video generator. Under extreme US government pressure over Chinese ownership of TikTok.",
- youknow:"TikTok · CapCut — both ByteDance",
+ tagline:"TikTok's parent , algorithm that changed how a billion people consume content",
+ plain:"ByteDance owns TikTok. The For You Page AI has reshaped global attention spans , history's most impactful AI deployment. Also: Doubao chatbot, CapCut AI video editor, Wan AI video generator. Under extreme US government pressure over Chinese ownership of TikTok.",
+ youknow:"TikTok · CapCut , both ByteDance",
  people:[{n:"Liang Rubo",r:"CEO"},{n:"Zhang Yiming",r:"Founder"}],
  products:["TikTok","Doubao chatbot","CapCut","Wan 2.1 (video gen)"],
  models:["Doubao-Pro","Wan 2.1"],
  founded:2012,hq:"Beijing, China",val:"~$300B+ (private)",
  chain:[{id:"bytedance",role:"Chinese tech + TikTok",col:"#c2410c"}]},
 {id:"alibaba",url:"https://www.alibabacloud.com",name:"Alibaba",cat:"chinese",r:36,xn:.735,yn:.376,hot:false,
- tagline:"China's Amazon — free Qwen models top global benchmarks",
+ tagline:"China's Amazon , free Qwen models top global benchmarks",
  plain:"Alibaba is China's e-commerce + cloud giant. Qwen AI models are free on HuggingFace and consistently top global benchmarks. Alibaba Cloud is the largest cloud in Asia.",
  youknow:"AliExpress · Alibaba Cloud · Qwen AI models",
  people:[{n:"Eddie Wu",r:"CEO"},{n:"Jack Ma",r:"Founder (reduced role)"}],
  products:["Tongyi Qianwen chatbot","Qwen models (free)","Alibaba Cloud"],
  models:["Qwen2.5-72B","QwQ-32B (reasoning)"],
- founded:1999,hq:"Hangzhou, China",val:"~$250–280B market cap",
+ founded:1999,hq:"Hangzhou, China",val:"~$250 to 280B market cap",
  chain:[{id:"alibaba",role:"Chinese e-commerce + cloud AI",col:"#c2410c"}]},
 	{id:"baidu",url:"https://www.baidu.com",name:"Baidu",cat:"chinese",r:36,xn:.868,yn:.376,hot:false,
-	 tagline:"China's Google — first ChatGPT competitor, now squeezed by DeepSeek",
+	 tagline:"China's Google , first ChatGPT competitor, now squeezed by DeepSeek",
 	 plain:"China's dominant search engine. Launched ERNIE Bot, China's first ChatGPT competitor. Runs Apollo self-driving platform with active robotaxis. Being outcompeted by DeepSeek and ByteDance.",
 	 youknow:"Baidu search (China's Google) · Apollo autonomous driving",
 	 people:[{n:"Robin Li",r:"CEO/Co-founder"}],
 	 products:["ERNIE Bot","Apollo (self-driving)"],
 	 models:["ERNIE 4.0 Turbo"],
-	 founded:2000,hq:"Beijing, China",val:"~$30–35B market cap",
+	 founded:2000,hq:"Beijing, China",val:"~$30 to 35B market cap",
 	 chain:[{id:"baidu",role:"Chinese search + AI",col:"#c2410c"}]},
 	{id:"tencent",url:"https://www.tencent.com",name:"Tencent",cat:"chinese",r:36,xn:.94,yn:.376,hot:false,
 	 tagline:"China's social, gaming, cloud, and AI giant behind WeChat",
@@ -2052,7 +3085,7 @@ const COS=[
 
 	// ── TIER 5: SPECIALIZED AI  yn≈0.375 ────────────────
 {id:"midjourney",url:"https://www.midjourney.com",name:"Midjourney",cat:"specialized",r:36,xn:.062,yn:.497,hot:false,
- tagline:"Best AI art — zero investors, profitable, runs on Discord",
+ tagline:"Best AI art , zero investors, profitable, runs on Discord",
  plain:"Generates stunning images from text. Completely bootstrapped, profitable, 20M+ users. V6.1 best-in-class for artistic image generation.",
  youknow:"AI-generated artwork all over social media",
  people:[{n:"David Holz",r:"CEO/Founder"}],
@@ -2061,7 +3094,7 @@ const COS=[
  founded:2022,hq:"San Francisco, CA",val:"~$10B+ (profitable, no investors)",
  chain:[{id:"midjourney",role:"AI image generation",col:"#7c3aed"}]},
 {id:"runway",url:"https://runwayml.com",name:"Runway",cat:"specialized",r:36,xn:.16,yn:.497,hot:false,
- tagline:"Hollywood AI video — used by real filmmakers, Google invested $100M",
+ tagline:"Hollywood AI video , used by real filmmakers, Google invested $100M",
  plain:"Type text or upload an image → cinematic video clips. Gen-3 Alpha used by professionals. Google invested ~$100M. Racing against Sora, Kling (China), and Pika.",
  youknow:"AI video in film, ads, and social media",
  people:[{n:"Cristóbal Valenzuela",r:"CEO"}],
@@ -2070,16 +3103,16 @@ const COS=[
  founded:2018,hq:"New York, NY",val:"~$4B",
  chain:[{id:"google",role:"$100M investor",col:"#1d4ed8"},{id:"runway",role:"AI video",col:"#7c3aed"}]},
 {id:"stability",url:"https://stability.ai",name:"Stability AI",cat:"specialized",r:36,xn:.248,yn:.497,hot:false,
- tagline:"Open-sourced AI art — nearly collapsed but tech lives on everywhere",
+ tagline:"Open-sourced AI art , nearly collapsed but tech lives on everywhere",
  plain:"Released Stable Diffusion free in 2022. Company fell apart in 2024 (founder resigned). Technology lives on through open-source community.",
- youknow:"Stable Diffusion — free AI art you run at home",
+ youknow:"Stable Diffusion , free AI art you run at home",
  people:[{n:"Prem Akkaraju",r:"CEO"}],
  products:["Stable Diffusion 3.5"],
  models:["Stable Diffusion 3.5","SDXL"],
  founded:2020,hq:"London, UK",val:"~$1B (reduced)",
  chain:[{id:"stability",role:"Open-source AI art pioneer",col:"#7c3aed"}]},
 {id:"elevenlabs",url:"https://elevenlabs.io",name:"ElevenLabs",cat:"specialized",r:36,xn:.335,yn:.497,hot:false,
- tagline:"Most realistic AI voice — clone any voice in seconds",
+ tagline:"Most realistic AI voice , clone any voice in seconds",
  plain:"AI voices so realistic you can't tell they're fake. Clone any voice from seconds of audio. Used for audiobooks, podcasts, AI phone agents. Raised $260M+.",
  youknow:"Realistic AI narration voices in YouTube and podcasts",
  people:[{n:"Mati Staniszewski",r:"CEO"},{n:"Piotr Dąbkowski",r:"CTO"}],
@@ -2090,18 +3123,18 @@ const COS=[
 
 // ── TIER 6: AI PLATFORMS  yn≈0.458 ──────────────────
 {id:"huggingface",url:"https://huggingface.co",name:"Hugging Face",cat:"platform",r:36,xn:.46,yn:.497,hot:false,
- tagline:"GitHub for AI — 1M+ models hosted, where the world shares AI freely",
- plain:"HuggingFace is THE platform for open-source AI. 1M+ models hosted. When Meta releases LLaMA — here. When Mistral releases models — here. Their Transformers library used by every AI researcher. Google, Amazon, Nvidia, Salesforce all invested in $235M Series C.",
- youknow:"HuggingFace.co — where developers download free AI models",
+ tagline:"GitHub for AI , 1M+ models hosted, where the world shares AI freely",
+ plain:"HuggingFace is THE platform for open-source AI. 1M+ models hosted. When Meta releases LLaMA , here. When Mistral releases models , here. Their Transformers library used by every AI researcher. Google, Amazon, Nvidia, Salesforce all invested in $235M Series C.",
+ youknow:"HuggingFace.co , where developers download free AI models",
  people:[{n:"Clément Delangue",r:"CEO"},{n:"Thomas Wolf",r:"CSO"}],
  products:["Model Hub (1M+ models)","Transformers library","Spaces (demos)","AutoTrain"],
  models:[],
  founded:2016,hq:"New York, NY",val:"~$4.5B",
  chain:[{id:"huggingface",role:"AI model distribution hub",col:"#0e7490"}]},
 	{id:"perplexity",url:"https://www.perplexity.ai",name:"Perplexity",cat:"platform",r:36,xn:.57,yn:.497,hot:false,
-	 tagline:"AI search engine — Nvidia led $73.6M round, Google's most credible challenger",
+	 tagline:"AI search engine , Nvidia led $73.6M round, Google's most credible challenger",
 	 plain:"Perplexity searches the web and writes cited answers instead of links. Nvidia led their $73.6M Series B (2024). Also backed by Jeff Bezos personally. Valued at $9B. Direct competitor to Google Search.",
-	 youknow:"Perplexity.ai — researchers use it instead of Google",
+	 youknow:"Perplexity.ai , researchers use it instead of Google",
 	 people:[{n:"Aravind Srinivas",r:"CEO (ex-OpenAI)"}],
 	 products:["Perplexity.ai (free + Pro)","Sonar API"],
 	 models:["Sonar Pro","Sonar Reasoning"],
@@ -2114,7 +3147,7 @@ const COS=[
 	 people:[{n:"Bret Taylor",r:"Co-founder"},{n:"Clay Bavor",r:"Co-founder"}],
 	 products:["Sierra AI agents","Customer service automation"],
 	 models:["Multi-model agent platform"],
-	 founded:2023,hq:"San Francisco, CA",val:"Private — multibillion-dollar valuation",
+	 founded:2023,hq:"San Francisco, CA",val:"Private , multibillion-dollar valuation",
 	 chain:[{id:"sierra",role:"Enterprise AI agents",col:"#7c3aed"}]},
 	{id:"harvey",url:"https://www.harvey.ai",name:"Harvey",cat:"specialized",r:36,xn:.82,yn:.497,hot:false,
 	 tagline:"Legal AI platform used by top law firms and professional services teams",
@@ -2123,30 +3156,30 @@ const COS=[
 	 people:[{n:"Winston Weinberg",r:"CEO/Co-founder"},{n:"Gabriel Pereyra",r:"President/Co-founder"}],
 	 products:["Harvey Assistant","Legal workflows","Professional services AI"],
 	 models:["Frontier-model legal AI"],
-	 founded:2022,hq:"San Francisco, CA",val:"Private — multibillion-dollar valuation",
+	 founded:2022,hq:"San Francisco, CA",val:"Private , multibillion-dollar valuation",
 	 chain:[{id:"openai",role:"Backed Harvey early",col:"#5b21b6"},{id:"harvey",role:"Legal AI platform",col:"#7c3aed"}]},
 
 	// ── TIER 7: CODING & DEV TOOLS  yn≈0.543 ────────────
 {id:"github_copilot",url:"https://github.com/features/copilot",name:"GitHub Copilot",cat:"coding",r:36,xn:.062,yn:.576,hot:false,
- tagline:"Microsoft owns GitHub — Copilot uses OpenAI's GPT, 1M+ paid developers",
+ tagline:"Microsoft owns GitHub , Copilot uses OpenAI's GPT, 1M+ paid developers",
  plain:"Microsoft acquired GitHub for $7.5B in 2018. GitHub Copilot uses OpenAI's GPT-4 to suggest code in real-time as you type. 1M+ paid subscribers, largest AI coding tool by users. Integrated directly into VS Code, JetBrains, and other IDEs.",
  youknow:"The AI that suggests your code as you type in VS Code",
  people:[{n:"Thomas Dohmke",r:"CEO of GitHub"}],
  products:["GitHub Copilot (code suggestions)","GitHub Copilot Chat","GitHub Actions","GitHub Advanced Security"],
- models:["GPT-4 (via OpenAI)","Claude (via Anthropic) — added 2024"],
+ models:["GPT-4 (via OpenAI)","Claude (via Anthropic) , added 2024"],
  founded:2008,hq:"San Francisco, CA",val:"Microsoft owned ($7.5B acquisition, 2018)",
  chain:[{id:"microsoft",role:"Owns GitHub",col:"#1d4ed8"},{id:"openai",role:"GPT powers Copilot",col:"#5b21b6"},{id:"github_copilot",role:"AI code assistant",col:"#0369a1"}]},
 {id:"cursor",url:"https://www.cursor.com",name:"Cursor",cat:"coding",r:36,xn:.19,yn:.576,hot:true,
- tagline:"AI-first code editor — Claude + GPT — fastest growing dev tool in 2024-2025",
- plain:"Cursor is built ON TOP of VS Code with AI at its core. Primary AI provider is Anthropic (Claude) — Claude powers Cursor's best features. Also uses OpenAI GPT models. Grew from near-zero to $1B+ valuation in 2024-2025 by being genuinely better than GitHub Copilot for complex coding. Beloved by developers.",
- youknow:"The code editor that can write entire files for you — not just suggest",
+ tagline:"AI-first code editor , Claude + GPT , fastest growing dev tool in 2024-2025",
+ plain:"Cursor is built ON TOP of VS Code with AI at its core. Primary AI provider is Anthropic (Claude) , Claude powers Cursor's best features. Also uses OpenAI GPT models. Grew from near-zero to $1B+ valuation in 2024-2025 by being genuinely better than GitHub Copilot for complex coding. Beloved by developers.",
+ youknow:"The code editor that can write entire files for you , not just suggest",
  people:[{n:"Michael Truell",r:"CEO/Co-founder"},{n:"Arvid Lunnemark",r:"Co-founder"}],
  products:["Cursor (AI code editor)","Cursor Chat","Cursor Composer"],
  models:["Claude Sonnet (primary)","GPT-4o (also available)","Gemini (also available)"],
  founded:2023,hq:"San Francisco, CA",val:"~$2.5B+",
  chain:[{id:"anthropic",role:"Primary AI (Claude)",col:"#5b21b6"},{id:"openai",role:"Also uses GPT",col:"#5b21b6"},{id:"cursor",role:"AI code editor",col:"#0369a1"}]},
 {id:"windsurf",url:"https://windsurf.com",name:"Windsurf",cat:"coding",r:36,xn:.318,yn:.576,hot:false,
- tagline:"Codeium's AI editor — uses Claude + GPT, strong GitHub Copilot competitor",
+ tagline:"Codeium's AI editor , uses Claude + GPT, strong GitHub Copilot competitor",
  plain:"Windsurf is the flagship AI IDE from Codeium. Uses both Anthropic Claude and OpenAI GPT models. Codeium also offers a free Copilot alternative. Acquired by OpenAI in 2025 for ~$3B (Codeium/Windsurf was acquired by OpenAI).",
  youknow:"AI code editor that competes with Cursor and GitHub Copilot",
  people:[{n:"Varun Mohan",r:"CEO of Codeium"}],
@@ -2155,7 +3188,7 @@ const COS=[
  founded:2021,hq:"Mountain View, CA",val:"~$3B (acquired by OpenAI 2025)",
  chain:[{id:"anthropic",role:"Claude powers Windsurf",col:"#5b21b6"},{id:"openai",role:"Also uses GPT + acquirer",col:"#5b21b6"},{id:"windsurf",role:"AI code editor",col:"#0369a1"}]},
 {id:"replit",url:"https://replit.com",name:"Replit",cat:"coding",r:36,xn:.445,yn:.576,hot:false,
- tagline:"AI-powered cloud coding platform — code in browser, deploy instantly",
+ tagline:"AI-powered cloud coding platform , code in browser, deploy instantly",
  plain:"Replit lets you code entirely in the browser with AI assistance. Uses both OpenAI and Anthropic models. 35M+ users. Built for students, learners, and rapid prototyping. Ghostwriter AI writes and fixes code in-browser.",
  youknow:"Code in your browser, AI fixes your bugs, deploy in one click",
  people:[{n:"Amjad Masad",r:"CEO/Co-founder"}],
@@ -2166,34 +3199,34 @@ const COS=[
 
 // ── TIER 8: ENTERPRISE AI  yn≈0.631 ─────────────────
 {id:"salesforce",url:"https://www.salesforce.com",name:"Salesforce",cat:"enterprise",r:36,xn:.045,yn:.658,hot:false,
- tagline:"Einstein AI in every Salesforce product — uses both OpenAI and Claude",
+ tagline:"Einstein AI in every Salesforce product , uses both OpenAI and Claude",
  plain:"Salesforce is the world's #1 CRM. Einstein AI is embedded in Sales Cloud, Service Cloud, Marketing Cloud, and Slack. Uses OpenAI GPT-4 AND Anthropic Claude. Agentforce (2025) is Salesforce's autonomous AI agents product. Also major investor in Cohere.",
- youknow:"The CRM used by most B2B sales teams — now with AI across everything",
+ youknow:"The CRM used by most B2B sales teams , now with AI across everything",
  people:[{n:"Marc Benioff",r:"CEO"},{n:"Clara Shih",r:"CEO of Salesforce AI"}],
  products:["Einstein AI","Agentforce","Sales Cloud AI","Service Cloud AI","Slack AI"],
  models:["GPT-4 (via OpenAI)","Claude (via Anthropic)"],
- founded:1999,hq:"San Francisco, CA",val:"~$280–320B market cap",
+ founded:1999,hq:"San Francisco, CA",val:"~$280 to 320B market cap",
  chain:[{id:"openai",role:"OpenAI powers Einstein",col:"#5b21b6"},{id:"anthropic",role:"Claude also in Einstein",col:"#5b21b6"},{id:"salesforce",role:"CRM + enterprise AI",col:"#047857"}]},
 {id:"hubspot",url:"https://www.hubspot.com",name:"HubSpot",cat:"enterprise",r:36,xn:.168,yn:.658,hot:false,
- tagline:"Marketing + Sales CRM with AI — uses OpenAI, used by 200K+ businesses",
+ tagline:"Marketing + Sales CRM with AI , uses OpenAI, used by 200K+ businesses",
  plain:"HubSpot is the leading marketing and sales platform for SMBs. Breeze AI (powered by OpenAI) is integrated across HubSpot's CRM, marketing, sales, and service tools. Used by 200K+ businesses. Direct competitor to Salesforce at the SMB level.",
  youknow:"The marketing/sales tool used by most SMBs and agencies",
  people:[{n:"Yamini Rangan",r:"CEO"},{n:"Dharmesh Shah",r:"CTO/Co-founder"}],
  products:["Marketing Hub AI","Sales Hub AI","Breeze AI","Service Hub","Content Hub"],
  models:["GPT-4 (via OpenAI)"],
- founded:2006,hq:"Cambridge, MA",val:"~$25–30B market cap",
+ founded:2006,hq:"Cambridge, MA",val:"~$25 to 30B market cap",
  chain:[{id:"openai",role:"OpenAI powers HubSpot Breeze AI",col:"#5b21b6"},{id:"hubspot",role:"Marketing/sales CRM",col:"#047857"}]},
 {id:"adobe",url:"https://www.adobe.com",name:"Adobe",cat:"enterprise",r:36,xn:.295,yn:.658,hot:false,
- tagline:"Firefly AI built-in — creative AI for designers, marketers, and video editors",
- plain:"Adobe's Firefly is built into Photoshop, Illustrator, Premiere, and Express. Adobe trained Firefly on licensed content (not scraped web) — a deliberate strategy for enterprise trust. Also partnered with OpenAI for some features. Adobe Acrobat now has AI PDF tools. Used by virtually every professional creative team.",
- youknow:"Photoshop AI fill · Firefly image gen · Acrobat AI — all Adobe",
+ tagline:"Firefly AI built-in , creative AI for designers, marketers, and video editors",
+ plain:"Adobe's Firefly is built into Photoshop, Illustrator, Premiere, and Express. Adobe trained Firefly on licensed content (not scraped web) , a deliberate strategy for enterprise trust. Also partnered with OpenAI for some features. Adobe Acrobat now has AI PDF tools. Used by virtually every professional creative team.",
+ youknow:"Photoshop AI fill · Firefly image gen · Acrobat AI , all Adobe",
  people:[{n:"Shantanu Narayen",r:"CEO"},{n:"Ely Greenfield",r:"CTO, Digital Media"}],
  products:["Adobe Firefly","Photoshop AI","Premiere AI","Acrobat AI","Adobe Express AI"],
- models:["Adobe Firefly (own model)","GPT-4 (via OpenAI — some features)"],
- founded:1982,hq:"San Jose, CA",val:"~$200–230B market cap",
- chain:[{id:"openai",role:"Partnership — some features",col:"#5b21b6"},{id:"adobe",role:"Creative AI platform",col:"#047857"}]},
+ models:["Adobe Firefly (own model)","GPT-4 (via OpenAI , some features)"],
+ founded:1982,hq:"San Jose, CA",val:"~$200 to 230B market cap",
+ chain:[{id:"openai",role:"Partnership , some features",col:"#5b21b6"},{id:"adobe",role:"Creative AI platform",col:"#047857"}]},
 {id:"oracle",url:"https://www.oracle.com",name:"Oracle",cat:"enterprise",r:36,xn:.422,yn:.658,hot:false,
- tagline:"Major Cohere investor — OCI cloud partners with OpenAI too",
+ tagline:"Major Cohere investor , OCI cloud partners with OpenAI too",
  plain:"Oracle is a major enterprise software + cloud company. Invested heavily in Cohere and is Cohere's primary cloud host. Also struck a deal with OpenAI to run some workloads on Oracle Cloud Infrastructure (OCI). Larry Ellison is one of the largest individual investors in AI infrastructure. OCI is a growing alternative to AWS/Azure/GCP.",
  youknow:"Oracle databases run most of the world's enterprise data · Oracle Cloud",
  people:[{n:"Safra Catz",r:"CEO"},{n:"Larry Ellison",r:"CTO/Founder"}],
@@ -2202,8 +3235,8 @@ const COS=[
  founded:1977,hq:"Austin, TX",val:"~$400B+ market cap",
  chain:[{id:"cohere",role:"Major investor + primary cloud",col:"#5b21b6"},{id:"openai",role:"OCI partnership",col:"#5b21b6"},{id:"oracle",role:"Enterprise software + cloud",col:"#047857"}]},
 {id:"sap",url:"https://www.sap.com",name:"SAP",cat:"enterprise",r:36,xn:.545,yn:.658,hot:false,
- tagline:"World's largest ERP software — Joule AI assistant runs on Azure OpenAI",
- plain:"SAP is the world's leading ERP (Enterprise Resource Planning) software — the backbone of most large corporations' operations. Joule is SAP's AI assistant, built on Azure OpenAI Service (Microsoft). Used by 300K+ businesses globally including 99% of Fortune 500.",
+ tagline:"World's largest ERP software , Joule AI assistant runs on Azure OpenAI",
+ plain:"SAP is the world's leading ERP (Enterprise Resource Planning) software , the backbone of most large corporations' operations. Joule is SAP's AI assistant, built on Azure OpenAI Service (Microsoft). Used by 300K+ businesses globally including 99% of Fortune 500.",
  youknow:"The software running finance, HR, and supply chain for most large companies",
  people:[{n:"Christian Klein",r:"CEO"}],
  products:["SAP S/4HANA","Joule AI Assistant","SAP BTP","SAP SuccessFactors"],
@@ -2211,7 +3244,7 @@ const COS=[
  founded:1972,hq:"Walldorf, Germany",val:"~$250B market cap",
  chain:[{id:"azure",role:"Azure OpenAI powers Joule",col:"#1e3a8a"},{id:"sap",role:"ERP + enterprise AI",col:"#047857"}]},
 	{id:"servicenow",url:"https://www.servicenow.com",name:"ServiceNow",cat:"enterprise",r:36,xn:.668,yn:.658,hot:false,
-	 tagline:"IT + HR workflows with AI — Now Intelligence powered by OpenAI",
+	 tagline:"IT + HR workflows with AI , Now Intelligence powered by OpenAI",
 	 plain:"ServiceNow is the platform that automates IT, HR, and customer service workflows for enterprises. Now Intelligence AI uses OpenAI's GPT models. Used by 7,700+ enterprise customers. AI copilot assists with ticket resolution, HR requests, and IT workflows.",
 	 youknow:"The IT helpdesk and workflow automation tool at large companies",
 	 people:[{n:"Bill McDermott",r:"CEO (ex-SAP CEO)"}],
@@ -2235,23 +3268,23 @@ const COS=[
 	 people:[{n:"Arvind Jain",r:"CEO/Founder"}],
 	 products:["Glean Assistant","Enterprise Search","Knowledge Graph"],
 	 models:["Multi-model workplace AI"],
-	 founded:2019,hq:"Palo Alto, CA",val:"Private — multibillion-dollar valuation",
+	 founded:2019,hq:"Palo Alto, CA",val:"Private , multibillion-dollar valuation",
 	 chain:[{id:"glean",role:"Enterprise knowledge AI",col:"#047857"}]},
 
 	// ── TIER 9: DATA PLATFORMS  yn≈0.710 ────────────────
 {id:"databricks",url:"https://www.databricks.com",name:"Databricks",cat:"data",r:36,xn:.052,yn:.754,hot:false,
- tagline:"Data + AI platform — DBRX model, used by 10,000+ enterprises for AI on their data",
- plain:"Databricks is WHERE enterprises actually do AI — they bring AI to company data rather than sending data to AI. 10,000+ enterprise customers. Built DBRX (their own open-source LLM). Partners with OpenAI but also competes with them. Lakehouse architecture is the modern standard for enterprise data + AI.",
+ tagline:"Data + AI platform , DBRX model, used by 10,000+ enterprises for AI on their data",
+ plain:"Databricks is WHERE enterprises actually do AI , they bring AI to company data rather than sending data to AI. 10,000+ enterprise customers. Built DBRX (their own open-source LLM). Partners with OpenAI but also competes with them. Lakehouse architecture is the modern standard for enterprise data + AI.",
  youknow:"How Fortune 500 companies run AI on their own private data",
  people:[{n:"Ali Ghodsi",r:"CEO/Co-founder"}],
  products:["Databricks Lakehouse","Mosaic AI","DBRX model","Delta Lake","MLflow"],
  models:["DBRX (own open-source model)"],
  founded:2013,hq:"San Francisco, CA",val:"~$62B (pre-IPO)",
- chain:[{id:"openai",role:"Partnership — data integration",col:"#5b21b6"},{id:"databricks",role:"Enterprise data + AI platform",col:"#065f46"}]},
+ chain:[{id:"openai",role:"Partnership , data integration",col:"#5b21b6"},{id:"databricks",role:"Enterprise data + AI platform",col:"#065f46"}]},
 	{id:"snowflake",url:"https://www.snowflake.com",name:"Snowflake",cat:"data",r:36,xn:.178,yn:.754,hot:false,
-	 tagline:"Data cloud + Cortex AI — OpenAI partnership, 9,000+ enterprise customers",
+	 tagline:"Data cloud + Cortex AI , OpenAI partnership, 9,000+ enterprise customers",
 	 plain:"Snowflake is a cloud data platform that stores and analyzes enterprise data. Cortex AI (2024) adds AI directly to where data lives. Partnership with OpenAI to offer ChatGPT Enterprise features inside Snowflake. 9,000+ customers. Competes with Databricks.",
-	 youknow:"Where enterprises store and query their big data — now with built-in AI",
+	 youknow:"Where enterprises store and query their big data , now with built-in AI",
 	 people:[{n:"Sridhar Ramaswamy",r:"CEO"}],
 	 products:["Snowflake Data Cloud","Cortex AI","Snowpark ML","Arctic (own model)"],
 	 models:["Snowflake Arctic (open-source)","GPT-4 (via OpenAI partnership)"],
@@ -2264,12 +3297,12 @@ const COS=[
 	 people:[{n:"Alexandr Wang",r:"Founder"}],
 	 products:["Data Engine","RLHF workflows","Model evaluation","Government AI data"],
 	 models:[],
-	 founded:2016,hq:"San Francisco, CA",val:"Private — major AI data infrastructure company",
+	 founded:2016,hq:"San Francisco, CA",val:"Private , major AI data infrastructure company",
 	 chain:[{id:"scaleai",role:"AI data + evaluation layer",col:"#065f46"}]},
 
 	// ── TIER 9b: AUTOMATION  yn≈0.710 ────────────────────
 {id:"zapier",url:"https://zapier.com",name:"Zapier",cat:"automation",r:36,xn:.335,yn:.754,hot:false,
- tagline:"Connects 7,000+ apps with AI — no-code automation for everyone",
+ tagline:"Connects 7,000+ apps with AI , no-code automation for everyone",
  plain:"Zapier connects 7,000+ apps through automated workflows (Zaps). AI Actions allows ChatGPT and Claude to control Zapier workflows. Zapier Central adds AI-native automation. Used by 2.2M+ businesses. The 'if this then that' backbone of modern business automation.",
  youknow:"The tool that makes your apps talk to each other automatically",
  people:[{n:"Wade Foster",r:"CEO/Co-founder"}],
@@ -2278,7 +3311,7 @@ const COS=[
  founded:2011,hq:"San Francisco, CA (remote)",val:"~$5B",
  chain:[{id:"openai",role:"AI Actions + ChatGPT integration",col:"#5b21b6"},{id:"anthropic",role:"Claude integration",col:"#5b21b6"},{id:"zapier",role:"No-code app automation",col:"#b45309"}]},
 {id:"make",url:"https://www.make.com",name:"Make",cat:"automation",r:36,xn:.452,yn:.754,hot:false,
- tagline:"Visual workflow automation — more powerful than Zapier, developer-favored",
+ tagline:"Visual workflow automation , more powerful than Zapier, developer-favored",
  plain:"Make (formerly Integromat) is a visual workflow automation platform. More powerful and flexible than Zapier, favored by developers and agencies. 500K+ users, 1,000+ app integrations. Owned by Celonis. Supports OpenAI integration natively.",
  youknow:"The more powerful visual version of Zapier, beloved by agencies",
  people:[{n:"Jan Řezáč",r:"CEO"}],
@@ -2287,7 +3320,7 @@ const COS=[
  founded:2012,hq:"Prague, Czech Republic",val:"Private (owned by Celonis)",
  chain:[{id:"openai",role:"AI module integration",col:"#5b21b6"},{id:"make",role:"Visual workflow automation",col:"#b45309"}]},
 {id:"n8n",url:"https://n8n.io",name:"n8n",cat:"automation",r:36,xn:.558,yn:.754,hot:false,
- tagline:"Open-source self-hostable automation — developer-first workflow tool",
+ tagline:"Open-source self-hostable automation , developer-first workflow tool",
  plain:"n8n is an open-source workflow automation tool you can self-host. 400+ integrations. Developer-first with code + visual modes. Growing rapidly as enterprises want open-source alternatives to Zapier/Make. Supports all major AI providers.",
  youknow:"The open-source Zapier alternative developers love",
  people:[{n:"Jan Oberhauser",r:"Founder"}],
@@ -2298,7 +3331,7 @@ const COS=[
 
 // ── TIER 9c: SALES & MARKETING AI  yn≈0.792 ─────────
 {id:"apollo",url:"https://www.apollo.io",name:"Apollo.io",cat:"salesai",r:36,xn:.715,yn:.754,hot:false,
- tagline:"AI sales intelligence — 275M contacts, used by Momentum Digital and 500K+ companies",
+ tagline:"AI sales intelligence , 275M contacts, used by Momentum Digital and 500K+ companies",
  plain:"Apollo.io provides sales prospecting data (275M+ contacts, 60M companies) with AI-powered outreach. AI features include email personalization, contact scoring, and sequence automation. Built on top of OpenAI models. Used by sales teams to find and contact prospects at scale.",
  youknow:"The tool sales teams use to find emails and automate outreach",
  people:[{n:"Tim Zheng",r:"CEO/Co-founder"}],
@@ -2307,16 +3340,16 @@ const COS=[
  founded:2015,hq:"San Francisco, CA",val:"~$1.6B",
  chain:[{id:"openai",role:"AI prospecting + personalization",col:"#5b21b6"},{id:"apollo",role:"Sales intelligence + outreach",col:"#9f1239"}]},
 {id:"clay",url:"https://www.clay.com",name:"Clay",cat:"salesai",r:36,xn:.82,yn:.754,hot:false,
- tagline:"AI data enrichment table — Claude + GPT, $500M valuation, agency darling",
+ tagline:"AI data enrichment table , Claude + GPT, $500M valuation, agency darling",
  plain:"Clay enriches prospect data using AI (both Claude and GPT). Combines 75+ data sources into one spreadsheet-like interface with AI writing. Used heavily by growth agencies and RevOps teams for personalized outreach at scale.",
  youknow:"The tool agencies use to build hyper-personalized lead lists with AI",
  people:[{n:"Kareem Amin",r:"CEO/Co-founder"}],
  products:["Clay Table","Claygent (AI agent)","Clay AI Enrichment","Outbound workflows"],
- models:["Claude (via Anthropic — primary)","GPT-4 (via OpenAI)"],
+ models:["Claude (via Anthropic , primary)","GPT-4 (via OpenAI)"],
  founded:2017,hq:"New York, NY",val:"~$500M",
  chain:[{id:"anthropic",role:"Claude powers Clay enrichment",col:"#5b21b6"},{id:"openai",role:"GPT also used",col:"#5b21b6"},{id:"clay",role:"AI data enrichment",col:"#9f1239"}]},
 {id:"zoominfo",url:"https://www.zoominfo.com",name:"ZoomInfo",cat:"salesai",r:36,xn:.925,yn:.754,hot:false,
- tagline:"B2B contact database + AI signals — 100M+ contacts, Nasdaq-listed",
+ tagline:"B2B contact database + AI signals , 100M+ contacts, Nasdaq-listed",
  plain:"ZoomInfo is a B2B intelligence platform with 100M+ business contacts and buying intent signals. Chorus.ai (acquired) provides AI call analysis. Copilot AI automates prospecting workflows. Used by 35,000+ companies. Publicly listed (Nasdaq: ZI).",
  youknow:"How B2B sales teams find company contacts and track buying signals",
  people:[{n:"Henry Schuck",r:"CEO/Co-founder"}],
@@ -2330,120 +3363,120 @@ const COS=[
 const APPS=[
 // AI ASSISTANTS  yn≈0.871
 {id:"chatgpt",url:"https://chat.openai.com",   name:"ChatGPT",   cat:"app",r:36,xn:.046,yn:.849,
- tagline:"OpenAI's product — 100M+ weekly users — started the AI revolution",
+ tagline:"OpenAI's product , 100M+ weekly users , started the AI revolution",
  plain:"ChatGPT launched Nov 2022. Writes, codes, analyzes, creates. Fastest-growing consumer app in history. Free tier + ChatGPT Plus ($20/mo). Runs on OpenAI's GPT-4o and o3 models.",
  youknow:"ChatGPT.com",people:[],products:[],models:["GPT-4o","o3"],founded:2022,hq:"openai.com",val:"Part of OpenAI"},
 {id:"claude_app",url:"https://claude.ai",name:"Claude",     cat:"app",r:36,xn:.166,yn:.849,
- tagline:"Anthropic's AI — this very conversation — known for safety and long docs",
+ tagline:"Anthropic's AI , this very conversation , known for safety and long docs",
  plain:"Anthropic's chatbot. Known for honesty, safety, and excellence at long documents. This exact AI you're talking to.",
- youknow:"Claude.ai — the AI in this conversation",people:[],products:[],models:["Sonnet 4.6","Opus 4"],founded:2023,hq:"claude.ai",val:"Part of Anthropic"},
+ youknow:"Claude.ai , the AI in this conversation",people:[],products:[],models:["Sonnet 4.6","Opus 4"],founded:2023,hq:"claude.ai",val:"Part of Anthropic"},
 {id:"gemini",url:"https://gemini.google.com",    name:"Gemini",    cat:"app",r:36,xn:.289,yn:.849,
- tagline:"Google's AI — built into Search, Gmail, YouTube, and Android",
+ tagline:"Google's AI , built into Search, Gmail, YouTube, and Android",
  plain:"Google's AI in Search (AI Overviews), Gmail, Docs, YouTube, and Android. Direct ChatGPT competitor. Gemini 2.5 Pro is highly capable.",
  youknow:"Google Search AI Overviews · Gemini app · Gmail AI",people:[],products:[],models:["Gemini 2.5 Pro","Gemini Flash"],founded:2023,hq:"gemini.google.com",val:"Part of Google"},
 {id:"ms_copilot",url:"https://copilot.microsoft.com",name:"Copilot",   cat:"app",r:36,xn:.41,yn:.849,
- tagline:"Microsoft AI in Word, Excel, Teams, Windows — powered by OpenAI",
+ tagline:"Microsoft AI in Word, Excel, Teams, Windows , powered by OpenAI",
  plain:"The AI assistant in Microsoft 365 and Windows. Powered by OpenAI's GPT via $13B investment.",
  youknow:"AI button in Word, Excel, Teams, and Windows",people:[],products:[],models:["GPT-4o via OpenAI"],founded:2023,hq:"microsoft.com",val:"Part of Microsoft"},
 {id:"grok",url:"https://grok.x.ai",      name:"Grok",      cat:"app",r:36,xn:.534,yn:.849,
- tagline:"xAI's chatbot in X — real-time access to all tweets, Grok 3 competes with GPT-4o",
+ tagline:"xAI's chatbot in X , real-time access to all tweets, Grok 3 competes with GPT-4o",
  plain:"Built into X (Twitter). Unique: can search all X posts in real time. Grok 3 directly competes with GPT-4o and Claude Sonnet.",
  youknow:"The AI button inside X/Twitter",people:[],products:[],models:["Grok 3","Grok 3 Thinking"],founded:2023,hq:"x.ai",val:"Part of xAI"},
 {id:"siri_app",url:"https://www.apple.com/siri",  name:"Siri",      cat:"app",r:36,xn:.657,yn:.849,
- tagline:"Apple's rebuilt voice assistant — ChatGPT backs up hard questions",
+ tagline:"Apple's rebuilt voice assistant , ChatGPT backs up hard questions",
  plain:"On every iPhone, Mac, Apple Watch. Rebuilt with Apple Intelligence (2024). Routes complex questions to ChatGPT with permission.",
- youknow:"'Hey Siri' — on all Apple devices",people:[],products:[],models:["Apple Intelligence + ChatGPT backup"],founded:2011,hq:"apple.com",val:"Part of Apple"},
+ youknow:"'Hey Siri' , on all Apple devices",people:[],products:[],models:["Apple Intelligence + ChatGPT backup"],founded:2011,hq:"apple.com",val:"Part of Apple"},
 {id:"alexa_app",url:"https://www.amazon.com/alexa", name:"Alexa",     cat:"app",r:36,xn:.78,yn:.849,
- tagline:"Amazon's voice assistant — being rebuilt with generative AI",
+ tagline:"Amazon's voice assistant , being rebuilt with generative AI",
  plain:"In Amazon Echo speakers and Fire TV. Being rebuilt from scratch with generative AI. Amazon spent $1B+ rebuilding Alexa.",
- youknow:"Amazon Echo — 'Alexa, play music'",people:[],products:[],models:["Alexa LLM (rebuilt)"],founded:2014,hq:"amazon.com",val:"Part of Amazon"},
+ youknow:"Amazon Echo , 'Alexa, play music'",people:[],products:[],models:["Alexa LLM (rebuilt)"],founded:2014,hq:"amazon.com",val:"Part of Amazon"},
 // CONSUMER SOCIAL  yn≈0.957
 {id:"facebook",url:"https://www.facebook.com",  name:"Facebook",  cat:"app",r:36,xn:.036,yn:.949,
- tagline:"Meta owns Facebook — 3B users, AI controls your entire feed",
- plain:"Meta IS Facebook — the company renamed itself Meta in 2021. 3B+ monthly users. AI decides every post and ad. Meta AI (LLaMA-powered) is now a chatbot in Messenger.",
- youknow:"Facebook — the original social network",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2004,hq:"facebook.com",val:"Part of Meta"},
+ tagline:"Meta owns Facebook , 3B users, AI controls your entire feed",
+ plain:"Meta IS Facebook , the company renamed itself Meta in 2021. 3B+ monthly users. AI decides every post and ad. Meta AI (LLaMA-powered) is now a chatbot in Messenger.",
+ youknow:"Facebook , the original social network",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2004,hq:"facebook.com",val:"Part of Meta"},
 {id:"instagram",url:"https://www.instagram.com", name:"Instagram", cat:"app",r:36,xn:.123,yn:.949,
- tagline:"Meta owns Instagram — bought for $1B in 2012, now worth $100B+",
+ tagline:"Meta owns Instagram , bought for $1B in 2012, now worth $100B+",
  plain:"Meta bought Instagram in 2012 for $1B (now worth $100B+). AI powers Reels algorithm, ad targeting, and all content moderation.",
- youknow:"Instagram — photos, Reels, Stories",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2010,hq:"instagram.com",val:"Meta acquired $1B, 2012"},
+ youknow:"Instagram , photos, Reels, Stories",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2010,hq:"instagram.com",val:"Meta acquired $1B, 2012"},
 {id:"whatsapp",url:"https://www.whatsapp.com",  name:"WhatsApp",  cat:"app",r:36,xn:.21,yn:.949,
- tagline:"Meta owns WhatsApp — $19B in 2014, 2B+ users, Meta AI integrated",
+ tagline:"Meta owns WhatsApp , $19B in 2014, 2B+ users, Meta AI integrated",
  plain:"Meta bought WhatsApp in 2014 for $19B. 2B+ users globally. Meta AI available as direct chat contact in WhatsApp.",
- youknow:"WhatsApp messaging — most-used messaging app outside US",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2009,hq:"whatsapp.com",val:"Meta acquired $19B, 2014"},
+ youknow:"WhatsApp messaging , most-used messaging app outside US",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2009,hq:"whatsapp.com",val:"Meta acquired $19B, 2014"},
 {id:"messenger",url:"https://www.messenger.com", name:"Messenger", cat:"app",r:36,xn:.297,yn:.949,
- tagline:"Meta owns Messenger — Meta AI chatbot built directly in",
+ tagline:"Meta owns Messenger , Meta AI chatbot built directly in",
  plain:"Facebook Messenger, owned by Meta. Meta AI chatbot available as a direct message contact. 1B+ users. Separate from WhatsApp though both Meta-owned.",
- youknow:"Facebook Messenger — messaging app with Meta AI built in",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2011,hq:"messenger.com",val:"Part of Meta"},
+ youknow:"Facebook Messenger , messaging app with Meta AI built in",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2011,hq:"messenger.com",val:"Part of Meta"},
 {id:"threads",url:"https://www.threads.net",   name:"Threads",   cat:"app",r:36,xn:.384,yn:.949,
- tagline:"Meta's Twitter competitor — launched 2023, 175M+ users",
- plain:"Meta launched Threads in July 2023 as a direct Twitter competitor — gaining 100M+ users in 5 days. Owned by Meta, connected to Instagram. Meta AI integrated. Growing steadily as X/Twitter declines.",
+ tagline:"Meta's Twitter competitor , launched 2023, 175M+ users",
+ plain:"Meta launched Threads in July 2023 as a direct Twitter competitor , gaining 100M+ users in 5 days. Owned by Meta, connected to Instagram. Meta AI integrated. Growing steadily as X/Twitter declines.",
  youknow:"Meta's alternative to X/Twitter, launched July 2023",people:[],products:[],models:["Meta AI (LLaMA)"],founded:2023,hq:"threads.net",val:"Part of Meta"},
 {id:"tiktok",url:"https://www.tiktok.com",    name:"TikTok",    cat:"app",r:36,xn:.471,yn:.949,
- tagline:"ByteDance owns TikTok — For You algorithm changed global culture forever",
+ tagline:"ByteDance owns TikTok , For You algorithm changed global culture forever",
  plain:"ByteDance (Chinese company) owns TikTok. The For You Page AI reshaped how 1B+ people consume content globally. Under intense US government pressure over Chinese ownership.",
- youknow:"TikTok — the short video app that changed social media",people:[],products:[],models:["TikTok recommendation AI"],founded:2016,hq:"tiktok.com",val:"Part of ByteDance"},
+ youknow:"TikTok , the short video app that changed social media",people:[],products:[],models:["TikTok recommendation AI"],founded:2016,hq:"tiktok.com",val:"Part of ByteDance"},
 {id:"youtube",url:"https://www.youtube.com",   name:"YouTube",   cat:"app",r:36,xn:.558,yn:.949,
- tagline:"Google owns YouTube — bought $1.65B in 2006, now worth $300B+",
+ tagline:"Google owns YouTube , bought $1.65B in 2006, now worth $300B+",
  plain:"Google bought YouTube in 2006 for $1.65B. Now worth $300B+. AI powers video recommendations, auto-captions, ad targeting. Gemini AI integrated throughout.",
- youknow:"YouTube — world's largest video platform",people:[],products:[],models:["Gemini (Google AI)"],founded:2005,hq:"youtube.com",val:"Google acquired $1.65B, 2006"},
+ youknow:"YouTube , world's largest video platform",people:[],products:[],models:["Gemini (Google AI)"],founded:2005,hq:"youtube.com",val:"Google acquired $1.65B, 2006"},
 {id:"x_twitter",url:"https://www.x.com", name:"X (Twitter)",cat:"app",r:36,xn:.645,yn:.949,
- tagline:"Elon Musk bought Twitter $44B in 2022 — renamed X, added Grok AI",
+ tagline:"Elon Musk bought Twitter $44B in 2022 , renamed X, added Grok AI",
  plain:"Elon Musk bought Twitter in Oct 2022 for $44B. Renamed it X. Built Grok AI directly into the platform. Grok can search all X posts in real time.",
- youknow:"X/Twitter — social media platform",people:[],products:[],models:["Grok AI (from xAI)"],founded:2006,hq:"x.com",val:"Musk acquired $44B, 2022"},
+ youknow:"X/Twitter , social media platform",people:[],products:[],models:["Grok AI (from xAI)"],founded:2006,hq:"x.com",val:"Musk acquired $44B, 2022"},
 {id:"linkedin",url:"https://www.linkedin.com",  name:"LinkedIn",  cat:"app",r:36,xn:.732,yn:.949,
- tagline:"Microsoft owns LinkedIn — $26.2B acquisition 2016, AI in every feature",
+ tagline:"Microsoft owns LinkedIn , $26.2B acquisition 2016, AI in every feature",
  plain:"Microsoft bought LinkedIn in 2016 for $26.2B. 1B+ members. AI features (Recruiter AI, LinkedIn AI Coach, InMail AI) powered by OpenAI via Microsoft's $13B investment. Essential for B2B marketing, recruiting, and professional networking.",
- youknow:"LinkedIn — professional network used by B2B marketers and recruiters",people:[],products:[],models:["GPT-4 via Microsoft/OpenAI"],founded:2003,hq:"Sunnyvale, CA",val:"Microsoft acquired $26.2B, 2016"},
+ youknow:"LinkedIn , professional network used by B2B marketers and recruiters",people:[],products:[],models:["GPT-4 via Microsoft/OpenAI"],founded:2003,hq:"Sunnyvale, CA",val:"Microsoft acquired $26.2B, 2016"},
 {id:"reddit",url:"https://www.reddit.com",    name:"Reddit",    cat:"app",r:36,xn:.82,yn:.949,
- tagline:"Google pays $60M/year for Reddit data — users training all AI models",
+ tagline:"Google pays $60M/year for Reddit data , users training all AI models",
  plain:"Reddit IPO'd in March 2024. Google signed a $60M/year deal to use Reddit posts for AI training. Content created by 80M+ daily users is what trained many AI models. Reddit's community knowledge is uniquely valuable training data.",
- youknow:"Reddit — social news and discussion where the internet talks",people:[],products:[],models:["Reddit AI — various providers"],founded:2005,hq:"San Francisco, CA",val:"~$10B market cap (NYSE: RDDT)"},
+ youknow:"Reddit , social news and discussion where the internet talks",people:[],products:[],models:["Reddit AI , various providers"],founded:2005,hq:"San Francisco, CA",val:"~$10B market cap (NYSE: RDDT)"},
 {id:"snapchat",url:"https://www.snapchat.com",  name:"Snapchat",  cat:"app",r:36,xn:.907,yn:.949,
- tagline:"Snap owns Snapchat — My AI chatbot powered by OpenAI's ChatGPT",
+ tagline:"Snap owns Snapchat , My AI chatbot powered by OpenAI's ChatGPT",
  plain:"Snap Inc. owns Snapchat. My AI chatbot is built into Snapchat and powered by OpenAI's ChatGPT (via API). 400M+ daily active users. Snap was early to integrate AI chatbots into consumer social apps.",
- youknow:"Snapchat — disappearing photos/videos app with ChatGPT built in",people:[],products:[],models:["ChatGPT via OpenAI (My AI)"],founded:2011,hq:"Santa Monica, CA",val:"~$18B market cap (NYSE: SNAP)"},
+ youknow:"Snapchat , disappearing photos/videos app with ChatGPT built in",people:[],products:[],models:["ChatGPT via OpenAI (My AI)"],founded:2011,hq:"Santa Monica, CA",val:"~$18B market cap (NYSE: SNAP)"},
 
 {id:"bing_ai",url:"https://www.bing.com/chat",   name:"Bing AI",   cat:"app",r:36,xn:.903,yn:.849,
- tagline:"Microsoft's search with GPT-4 — first AI search to go mainstream",
+ tagline:"Microsoft's search with GPT-4 , first AI search to go mainstream",
  plain:"Microsoft integrated OpenAI's GPT-4 into Bing Search after their $13B investment. Bing AI Chat answers web questions conversationally. First AI search to go mainstream (launched Feb 2023).",
  youknow:"Bing search engine with AI chat",people:[],products:[],models:["GPT-4o via OpenAI"],founded:2009,hq:"bing.com",val:"Part of Microsoft"},
 ];
 
-// ═══ COMPANY–COMPANY RELATIONSHIPS ════════════════════
+// ═══ COMPANY to COMPANY RELATIONSHIPS ════════════════════
 const CO_RELS=[
 // ── HARDWARE connections ──────────────────────────────
 {s:"nvidia",t:"coreweave",  type:"investment",w:2.5,short:"~$100M invested + primary GPU supplier",
  why:"Nvidia invested in CoreWeave to create a GPU-first alternative cloud. CoreWeave buying massive Nvidia orders means guaranteed revenue.",
  ag:"Billions in GPU sales to CoreWeave. Strategic stake in fast-growing AI cloud.",
  bg:"~$100M investment. Access to Nvidia's latest H100/H200/Blackwell chips.",
- amt:"~$100M + ongoing GPU supply",dt:"2022–ongoing"},
-{s:"nvidia",t:"openai",     type:"partnership",w:2.8,short:"Primary GPU supplier — H100/H200/Blackwell",
+ amt:"~$100M + ongoing GPU supply",dt:"2022 to ongoing"},
+{s:"nvidia",t:"openai",     type:"partnership",w:2.8,short:"Primary GPU supplier , H100/H200/Blackwell",
  why:"OpenAI trains all models on Nvidia hardware. Nvidia needs OpenAI's success to drive GPU demand industry-wide.",
  ag:"Billions in GPU revenue from OpenAI's massive training clusters.",
  bg:"Best AI training hardware available. Tens of thousands of H100/H200 GPUs.",
- amt:"Ongoing — tens of thousands of GPUs",dt:"2016–ongoing"},
+ amt:"Ongoing , tens of thousands of GPUs",dt:"2016 to ongoing"},
 {s:"nvidia",t:"anthropic",  type:"partnership",w:2,short:"GPU supply + investment in Anthropic",
  why:"Anthropic trains Claude on massive GPU clusters. Nvidia maintains relationships with all frontier AI labs.",
  ag:"Anthropic as a top GPU customer. Stake in $61B AI safety company.",
  bg:"Nvidia investment + access to latest chips for Claude training.",
- amt:"Investment amount undisclosed",dt:"2023–ongoing"},
+ amt:"Investment amount undisclosed",dt:"2023 to ongoing"},
 {s:"nvidia",t:"xai",        type:"partnership",w:2,short:"100,000 H100 GPUs built Colossus in 122 days",
  why:"xAI needed a massive GPU supercomputer built fast. Nvidia had supply and urgency.",
  ag:"One of the largest single GPU orders ever placed. Billions in revenue.",
- bg:"100,000 H100 GPUs assembled into Colossus in Memphis — done in just 122 days.",
- amt:"100,000 H100 GPUs (~$2–4B value)",dt:"2024"},
+ bg:"100,000 H100 GPUs assembled into Colossus in Memphis , done in just 122 days.",
+ amt:"100,000 H100 GPUs (~$2 to 4B value)",dt:"2024"},
 {s:"nvidia",t:"meta",       type:"partnership",w:2,short:"Meta bought 350,000+ Nvidia H100 GPUs",
  why:"Meta needs enormous compute to train LLaMA and run AI for 3B+ daily users.",
  ag:"One of the largest GPU orders in history. Billions in revenue.",
  bg:"Compute to train Llama 4 and run AI across Facebook, Instagram, WhatsApp.",
- amt:"350,000+ H100 GPUs (~$7–14B value)",dt:"2024"},
+ amt:"350,000+ H100 GPUs (~$7 to 14B value)",dt:"2024"},
 {s:"nvidia",t:"perplexity", type:"investment",w:1.8,short:"Led Perplexity's $73.6M Series B (2024)",
  why:"Nvidia invests in AI companies that grow the ecosystem and drive GPU demand.",
  ag:"Perplexity as a GPU customer. Stake in AI search threatening Google.",
  bg:"Part of $73.6M Series B. Strategic Nvidia backing.",
  amt:"Part of $73.6M Series B",dt:"2024"},
 {s:"nvidia",t:"huggingface",type:"investment",w:1.8,short:"Part of HuggingFace's $235M Series C",
- why:"HuggingFace is where developers access AI models — all running on Nvidia GPUs.",
+ why:"HuggingFace is where developers access AI models , all running on Nvidia GPUs.",
  ag:"HuggingFace drives model adoption on Nvidia hardware.",
  bg:"Part of $235M Series C. Access to latest Nvidia hardware.",
  amt:"Part of $235M Series C",dt:"2023"},
@@ -2451,7 +3484,7 @@ const CO_RELS=[
  why:"Enterprise AI adoption drives massive data center GPU sales.",
  ag:"Cohere customers run AI on Nvidia data center GPUs.",
  bg:"Funding capital. Nvidia GPU access for enterprise inference.",
- amt:"Part of Cohere Series C ($270M)",dt:"2023–2024"},
+ amt:"Part of Cohere Series C ($270M)",dt:"2023 to 2024"},
 {s:"nvidia",t:"mistral",    type:"investment",w:1.7,short:"Participated in Mistral AI funding rounds",
  why:"Open-source AI adoption means more global GPU usage.",
  ag:"Stake in Europe's leading AI lab.",
@@ -2461,17 +3494,17 @@ const CO_RELS=[
  why:"AWS wants non-Nvidia options to reduce dependency and offer price competition.",
  ag:"Growing revenue from AI workloads. Credibility with enterprise customers.",
  bg:"Access to AWS's massive enterprise customer base.",
- amt:"Ongoing partnership",dt:"2023–ongoing"},
+ amt:"Ongoing partnership",dt:"2023 to ongoing"},
 	{s:"coreweave",t:"openai",  type:"partnership",w:2.8,short:"OpenAI's largest compute supplier in 2025",
 	 why:"OpenAI moved major workloads FROM Azure TO CoreWeave in 2025 for better GPU access and pricing.",
 	 ag:"OpenAI as CoreWeave's anchor and largest customer. Massive credibility.",
 	 bg:"Best-in-class GPU infrastructure. Faster scaling than Azure for AI workloads.",
-	 amt:"Billions in committed compute spend",dt:"2024–2025"},
+	 amt:"Billions in committed compute spend",dt:"2024 to 2025"},
 	{s:"asml",t:"tsmc",         type:"partnership",w:2.2,short:"ASML EUV machines enable TSMC's most advanced chipmaking",
 	 why:"TSMC depends on ASML's EUV lithography systems to manufacture leading-edge chips for the AI economy.",
 	 ag:"ASML sells some of the world's most critical and expensive semiconductor manufacturing tools.",
 	 bg:"TSMC gets the equipment needed for advanced nodes and high-volume AI chip fabrication.",
-	 amt:"Ongoing supply relationship",dt:"1990s–ongoing"},
+	 amt:"Ongoing supply relationship",dt:"1990s to ongoing"},
 	{s:"tsmc",t:"nvidia",       type:"partnership",w:2.4,short:"TSMC manufactures Nvidia's leading AI GPUs",
 	 why:"Nvidia designs the GPUs, but TSMC fabricates the advanced chips that power modern AI training and inference.",
 	 ag:"Nvidia gets world-class chip manufacturing capacity.",
@@ -2507,29 +3540,29 @@ const CO_RELS=[
  why:"Amazon created AWS in 2006 to monetize their internal infrastructure. It now generates ~70% of Amazon's operating profit.",
  ag:"~$100B annual revenue. Cloud margins far higher than e-commerce.",
  bg:"World-class cloud infrastructure at Amazon's scale.",
- amt:"Amazon division — $100B+ annual revenue",dt:"Founded 2006"},
+ amt:"Amazon division , $100B+ annual revenue",dt:"Founded 2006"},
 {s:"microsoft",t:"azure",   type:"owns",w:2.5,short:"Microsoft owns and runs Azure (24% cloud market share)",
  why:"Microsoft built Azure to compete with AWS and to host OpenAI workloads.",
  ag:"~$80B+ annual revenue. Essential infrastructure for Microsoft 365 and OpenAI.",
  bg:"Azure cloud infrastructure + exclusive home for OpenAI.",
- amt:"Microsoft division — $80B+ annual revenue",dt:"Founded 2010"},
+ amt:"Microsoft division , $80B+ annual revenue",dt:"Founded 2010"},
 {s:"google",t:"google_cloud",type:"owns",w:2.5,short:"Google owns and runs Google Cloud (11%, fastest growing)",
  why:"Google built GCP to monetize its infrastructure expertise and compete with AWS/Azure.",
  ag:"~$40B+ annual revenue. Growing fastest. Essential for Vertex AI and Anthropic.",
  bg:"Google Cloud infrastructure including TPUs.",
- amt:"Google division — $40B+ annual revenue",dt:"Founded 2008"},
+ amt:"Google division , $40B+ annual revenue",dt:"Founded 2008"},
 // ── Cloud → AI Lab relationships ──────────────────────
-{s:"azure",t:"openai",      type:"partnership",w:3.2,short:"OpenAI's EXCLUSIVE cloud — all ChatGPT runs on Azure",
+{s:"azure",t:"openai",      type:"partnership",w:3.2,short:"OpenAI's EXCLUSIVE cloud , all ChatGPT runs on Azure",
  why:"Microsoft invested $13B in OpenAI and built the OpenAI-Azure relationship as part of the deal.",
  ag:"Billions in cloud revenue from OpenAI inference. The most valuable cloud partnership in history.",
  bg:"Azure as the exclusive cloud. Microsoft's AI capabilities.",
- amt:"Exclusive cloud partner — billions annually",dt:"2019–ongoing"},
-{s:"aws",t:"anthropic",     type:"investment",w:3,short:"$4B investment — Anthropic uses AWS as primary cloud",
+ amt:"Exclusive cloud partner , billions annually",dt:"2019 to ongoing"},
+{s:"aws",t:"anthropic",     type:"investment",w:3,short:"$4B investment , Anthropic uses AWS as primary cloud",
  why:"Amazon wants AWS to win the AI cloud race vs Azure. Every Claude API call on AWS = direct revenue.",
  ag:"Anthropic's primary cloud provider. Revenue from every Claude inference.",
  bg:"Up to $4B cash. AWS infrastructure for training and serving Claude.",
- amt:"Up to $4 billion",dt:"2023–2024"},
-{s:"google_cloud",t:"anthropic",type:"investment",w:2.2,short:"$300M investment — Anthropic on Google Cloud as backup",
+ amt:"Up to $4 billion",dt:"2023 to 2024"},
+{s:"google_cloud",t:"anthropic",type:"investment",w:2.2,short:"$300M investment , Anthropic on Google Cloud as backup",
  why:"Google couldn't let Anthropic only use AWS/Azure. Investing gives Anthropic a cloud option and Google strategic influence.",
  ag:"$300M stake. Anthropic uses Google Cloud. Hedge vs OpenAI/Microsoft.",
  bg:"$300M cash. Google Cloud as secondary cloud provider.",
@@ -2538,24 +3571,24 @@ const CO_RELS=[
  why:"Amazon added DeepSeek R1 to Bedrock after Jan 2025 launch shocked the world.",
  ag:"Revenue from DeepSeek inference. Positions Bedrock as comprehensive marketplace.",
  bg:"Distribution to millions of AWS businesses. Amazon's enterprise reach.",
- amt:"API partnership — no equity",dt:"2025"},
+ amt:"API partnership , no equity",dt:"2025"},
 {s:"google_cloud",t:"deepseek",type:"partnership",w:1.5,short:"DeepSeek R1 on Google Cloud Vertex AI",
  why:"Google Cloud offers DeepSeek R1 on Vertex AI to compete with AWS Bedrock.",
  ag:"Revenue from DeepSeek inference. Competitive with Azure/AWS.",
  bg:"Enterprise distribution via Vertex AI.",
- amt:"API partnership — no equity",dt:"2025"},
+ amt:"API partnership , no equity",dt:"2025"},
 // ── Big Tech → AI Lab investments ─────────────────────
-{s:"microsoft",t:"openai",  type:"investment",w:4,short:"~$13B for ~49% of profits — the biggest AI bet in history",
+{s:"microsoft",t:"openai",  type:"investment",w:4,short:"~$13B for ~49% of profits , the biggest AI bet in history",
  why:"Microsoft needed frontier AI to compete with Google. OpenAI needed billions and cloud power.",
  ag:"~49% of OpenAI profits. GPT in every Microsoft product. Azure as exclusive cloud.",
  bg:"~$13 billion. Azure cloud. Microsoft's global enterprise sales force.",
  amt:"~$13 billion (3 rounds)",dt:"2019, 2021, 2023"},
-{s:"amazon",t:"anthropic",  type:"investment",w:3.5,short:"$4B committed — the AWS-Anthropic bet",
+{s:"amazon",t:"anthropic",  type:"investment",w:3.5,short:"$4B committed , the AWS-Anthropic bet",
  why:"Amazon wants AWS to be THE AI cloud. Every Claude API call on AWS = revenue.",
  ag:"Anthropic uses AWS as primary cloud. Claude access via Bedrock.",
  bg:"Up to $4B cash. World-class AWS infrastructure.",
- amt:"Up to $4 billion",dt:"2023–2024"},
-{s:"google",t:"anthropic",  type:"investment",w:2.5,short:"~$300M — Google hedges against OpenAI dominance",
+ amt:"Up to $4 billion",dt:"2023 to 2024"},
+{s:"google",t:"anthropic",  type:"investment",w:2.5,short:"~$300M , Google hedges against OpenAI dominance",
  why:"Google couldn't let Anthropic go exclusively to Microsoft/Amazon.",
  ag:"~10% stake. Hedge vs OpenAI. Anthropic on Google Cloud.",
  bg:"$300M cash. Google Cloud option. TPU access.",
@@ -2586,7 +3619,7 @@ const CO_RELS=[
  bg:"Part of $235M Series C. AWS compute access.",
  amt:"Part of $235M Series C",dt:"2023"},
 // ── Ownership (Big Tech → products) ──────────────────
-{s:"microsoft",t:"github_copilot",type:"owns",w:2.5,short:"Microsoft owns GitHub ($7.5B, 2018) — Copilot is GitHub's AI",
+{s:"microsoft",t:"github_copilot",type:"owns",w:2.5,short:"Microsoft owns GitHub ($7.5B, 2018) , Copilot is GitHub's AI",
  why:"Microsoft acquired GitHub in 2018 to own the developer platform. GitHub Copilot is the AI product built on top.",
  ag:"1M+ paid Copilot subscribers. AI embedded in all developer workflows.",
  bg:"$7.5B acquisition price. Microsoft cloud + OpenAI AI capabilities.",
@@ -2596,24 +3629,24 @@ const CO_RELS=[
  why:"Anthropic's founders believed OpenAI wasn't taking AI safety seriously enough.",
  ag:"OpenAI lost their VP of Research and 7 key researchers.",
  bg:"Founded Anthropic with frontier expertise. Raised billions with safety-first mission.",
- amt:"No money — key people departing",dt:"2021"},
+ amt:"No money , key people departing",dt:"2021"},
 {s:"openai",t:"ssi",        type:"alumni",w:1.8,short:"Ilya Sutskever left OpenAI to found Safe Superintelligence",
  why:"After the Altman firing saga, Ilya felt OpenAI had drifted from pure safety research.",
- ag:"OpenAI lost their most celebrated researcher — the man who helped train GPT-4.",
+ ag:"OpenAI lost their most celebrated researcher , the man who helped train GPT-4.",
  bg:"Founded SSI. Raised $1B immediately. Valued at $32B.",
- amt:"No money — researcher departure",dt:"2024"},
+ amt:"No money , researcher departure",dt:"2024"},
 // ── Model distribution ────────────────────────────────
 {s:"huggingface",t:"meta",  type:"partnership",w:1.7,short:"Meta hosts all LLaMA models on HuggingFace",
  why:"Meta releases LLaMA free and needs distribution. HuggingFace is the universal standard.",
  ag:"Meta's model portfolio massively boosts HuggingFace traffic.",
- bg:"Global distribution — millions download LLaMA from HuggingFace.",
- amt:"No money — distribution partnership",dt:"2023–ongoing"},
+ bg:"Global distribution , millions download LLaMA from HuggingFace.",
+ amt:"No money , distribution partnership",dt:"2023 to ongoing"},
 // ── Enterprise AI connections ─────────────────────────
 {s:"salesforce",t:"openai", type:"partnership",w:2,short:"Einstein AI uses OpenAI GPT-4",
  why:"Salesforce integrated OpenAI to add AI to its CRM products.",
  ag:"AI capabilities in all Salesforce products. Agentforce platform.",
  bg:"Enterprise-grade AI distribution. Salesforce's 150K+ customer base.",
- amt:"Strategic partnership",dt:"2023–ongoing"},
+ amt:"Strategic partnership",dt:"2023 to ongoing"},
 {s:"salesforce",t:"anthropic",type:"partnership",w:1.8,short:"Einstein also uses Anthropic Claude",
  why:"Salesforce offers both OpenAI and Anthropic options for enterprise customers.",
  ag:"Claude in Einstein. Enterprise flexibility.",
@@ -2623,12 +3656,12 @@ const CO_RELS=[
  why:"HubSpot needed AI across marketing, sales, and service tools.",
  ag:"AI features in HubSpot products. 200K+ business distribution.",
  bg:"OpenAI powers HubSpot Breeze AI across the platform.",
- amt:"Strategic partnership",dt:"2023–ongoing"},
+ amt:"Strategic partnership",dt:"2023 to ongoing"},
 {s:"adobe",t:"openai",      type:"partnership",w:1.7,short:"Adobe Firefly + OpenAI partnership for some features",
  why:"Adobe uses OpenAI for some AI features alongside their own Firefly models.",
  ag:"AI in Photoshop, Acrobat, Express. Professional creative market.",
  bg:"OpenAI capabilities integrated into Adobe Creative Suite.",
- amt:"Strategic partnership",dt:"2023–ongoing"},
+ amt:"Strategic partnership",dt:"2023 to ongoing"},
 {s:"oracle",t:"cohere",     type:"investment",w:2,short:"Oracle is a major investor in Cohere + primary cloud host",
  why:"Oracle invested in Cohere to anchor enterprise AI on OCI (Oracle Cloud).",
  ag:"Cohere runs on Oracle Cloud. Major strategic investment.",
@@ -2643,12 +3676,12 @@ const CO_RELS=[
  why:"ServiceNow integrated OpenAI to add AI to IT and HR workflows.",
  ag:"AI in 7,700+ enterprise customers. Now AI copilot.",
  bg:"Enterprise distribution. OpenAI in workforce workflows.",
- amt:"Strategic partnership",dt:"2023–ongoing"},
+ amt:"Strategic partnership",dt:"2023 to ongoing"},
 {s:"databricks",t:"openai", type:"partnership",w:1.6,short:"Databricks + OpenAI data platform integration",
  why:"Enterprises need to connect their Databricks data to OpenAI models.",
  ag:"Databricks customers access OpenAI via integrated platform.",
  bg:"OpenAI models available in Databricks Mosaic AI.",
- amt:"Strategic partnership",dt:"2023–ongoing"},
+ amt:"Strategic partnership",dt:"2023 to ongoing"},
 {s:"snowflake",t:"openai",  type:"partnership",w:1.6,short:"Snowflake Cortex AI partnership with OpenAI",
  why:"Snowflake partnered with OpenAI to bring AI directly to enterprise data.",
  ag:"OpenAI features in Snowflake Cortex. 9,000+ customer access.",
@@ -2658,7 +3691,7 @@ const CO_RELS=[
 	 why:"SAP chose Microsoft Azure and OpenAI to power Joule, their AI assistant.",
 	 ag:"Azure as SAP's AI cloud. Revenue from 300K+ SAP customers.",
 	 bg:"OpenAI GPT-4 powers Joule. World-class AI for SAP ERP.",
-	 amt:"Multi-year strategic partnership",dt:"2023–ongoing"},
+	 amt:"Multi-year strategic partnership",dt:"2023 to ongoing"},
 	{s:"meta",t:"scaleai",      type:"investment",w:2.2,short:"Meta made Scale AI central to its data and superintelligence push",
 	 why:"Frontier model competition is increasingly about data quality, evaluation, and human feedback, not just raw compute.",
 	 ag:"Meta gets deeper access to data infrastructure and AI talent.",
@@ -2673,7 +3706,7 @@ const CO_RELS=[
 	 why:"Defense and government customers need AI systems that work with strict security, permissions, and classified environments.",
 	 ag:"Microsoft expands Azure AI into high-security government use cases.",
 	 bg:"Palantir gets cloud distribution and deeper model access for AIP.",
-	 amt:"Strategic partnership",dt:"2024–ongoing"},
+	 amt:"Strategic partnership",dt:"2024 to ongoing"},
 	{s:"salesforce",t:"sierra", type:"alumni",w:1.5,short:"Sierra was co-founded by former Salesforce co-CEO Bret Taylor",
 	 why:"Sierra's customer-service AI vision comes from deep experience building enterprise software at Salesforce.",
 	 ag:"Salesforce alumni helped create a major AI-agent company.",
@@ -2683,7 +3716,7 @@ const CO_RELS=[
 	 why:"Legal work is a strong fit for frontier models because it mixes reading, reasoning, drafting, and domain expertise.",
 	 ag:"OpenAI gets a flagship vertical AI success case.",
 	 bg:"Harvey gets frontier-model access and credibility with law firms.",
-	 amt:"Startup backing + model partnership",dt:"2022–ongoing"},
+	 amt:"Startup backing + model partnership",dt:"2022 to ongoing"},
 	{s:"openai",t:"glean",      type:"partnership",w:1.5,short:"Glean connects workplace knowledge to frontier models like OpenAI",
 	 why:"Enterprise AI needs private company context. Glean helps route internal knowledge into AI assistants safely.",
 	 ag:"OpenAI reaches enterprise workflows through knowledge-search products.",
@@ -2694,22 +3727,22 @@ const CO_RELS=[
  why:"Cursor chose Anthropic's Claude as their primary AI because Claude excels at long-context code understanding.",
  ag:"Cursor is Anthropic's most visible B2C distribution channel for developers.",
  bg:"Claude powers Cursor's best features. Best coding AI available.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 {s:"cursor",t:"openai",     type:"partnership",w:1.7,short:"Cursor also offers GPT-4o as an option",
  why:"Cursor offers multiple model choices so developers can pick their preference.",
  ag:"OpenAI in Cursor's model selection.",
  bg:"GPT-4o available alongside Claude.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 {s:"github_copilot",t:"openai",type:"partnership",w:2.5,short:"GitHub Copilot runs on OpenAI's GPT-4 Codex",
  why:"GitHub Copilot was built using OpenAI's Codex (code-specialized GPT). Microsoft's OpenAI investment made this natural.",
  ag:"Copilot is OpenAI's largest code product deployment. 1M+ paid subscribers.",
  bg:"GPT-4 (code-optimized) powers all code suggestions.",
- amt:"Via Microsoft-OpenAI partnership",dt:"2021–ongoing"},
+ amt:"Via Microsoft-OpenAI partnership",dt:"2021 to ongoing"},
 {s:"windsurf",t:"anthropic", type:"partnership",w:1.8,short:"Windsurf uses Claude for AI coding features",
  why:"Windsurf integrated Claude because of its strong code understanding.",
  ag:"Anthropic distributed via Windsurf to developers.",
  bg:"Claude powers Windsurf's AI features.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 {s:"windsurf",t:"openai",   type:"partnership",w:1.7,short:"Windsurf also uses OpenAI + was acquired by OpenAI",
  why:"Codeium/Windsurf was acquired by OpenAI in 2025 for ~$3B.",
  ag:"OpenAI gains major coding tool distribution.",
@@ -2719,34 +3752,34 @@ const CO_RELS=[
  why:"Replit integrated OpenAI to power AI coding features for 35M+ users.",
  ag:"Distribution to 35M+ developers. AI coding in browser.",
  bg:"GPT-4 powers Replit's Ghostwriter AI.",
- amt:"API partnership",dt:"2022–ongoing"},
+ amt:"API partnership",dt:"2022 to ongoing"},
 {s:"replit",t:"anthropic",  type:"partnership",w:1.6,short:"Replit also uses Anthropic Claude",
  why:"Replit offers multiple AI model options for developers.",
  ag:"Additional AI capability. Claude in Replit platform.",
  bg:"Claude available in Replit coding environment.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 // ── Sales AI connections ──────────────────────────────
 {s:"apollo",t:"openai",     type:"partnership",w:1.5,short:"Apollo AI features powered by OpenAI",
  why:"Apollo uses OpenAI models to personalize outreach and score leads.",
  ag:"AI prospecting in Apollo's 275M contact database.",
  bg:"OpenAI powers Apollo's AI email and personalization.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 {s:"clay",t:"anthropic",    type:"partnership",w:1.7,short:"Claude is Clay's PRIMARY AI for enrichment",
  why:"Clay uses Anthropic Claude as primary AI for data enrichment and research tasks.",
  ag:"Clay distributed to growth agencies and RevOps teams.",
  bg:"Claude powers Claygent (AI agent) and enrichment features.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 {s:"clay",t:"openai",       type:"partnership",w:1.5,short:"Clay also uses GPT-4 for AI features",
  why:"Clay offers multiple AI providers for different enrichment tasks.",
  ag:"GPT in Clay's multi-model enrichment pipeline.",
  bg:"OpenAI as additional AI backbone.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 // ── Automation connections ────────────────────────────
 {s:"zapier",t:"openai",     type:"partnership",w:1.7,short:"Zapier AI Actions connects ChatGPT to 7,000+ apps",
  why:"Zapier integrated OpenAI to bring AI into workflow automation.",
  ag:"OpenAI access to Zapier's 2.2M+ business users.",
  bg:"ChatGPT can control Zapier workflows. AI-powered automation.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 {s:"zapier",t:"anthropic",  type:"partnership",w:1.5,short:"Claude integrated in Zapier AI features",
  why:"Zapier offers both OpenAI and Anthropic models in AI Actions.",
  ag:"Claude distributed to Zapier's enterprise users.",
@@ -2756,29 +3789,29 @@ const CO_RELS=[
  why:"Make integrated OpenAI to add AI capabilities to visual workflows.",
  ag:"OpenAI in Make's automation platform.",
  bg:"GPT-4 in Make's AI automation nodes.",
- amt:"API partnership",dt:"2023–ongoing"},
+ amt:"API partnership",dt:"2023 to ongoing"},
 ];
 
 // ═══ APP RELATIONSHIPS (company → app) ════════════════
 const APP_RELS=[
-{co:"openai",    app:"chatgpt",   type:"powers", label:"OpenAI created and runs ChatGPT — their flagship consumer product"},
-{co:"anthropic", app:"claude_app",type:"powers", label:"Anthropic created and runs Claude.ai — their flagship consumer product"},
-{co:"google",    app:"gemini",    type:"powers", label:"Google built Gemini AI — their flagship AI product replacing Google Assistant"},
+{co:"openai",    app:"chatgpt",   type:"powers", label:"OpenAI created and runs ChatGPT , their flagship consumer product"},
+{co:"anthropic", app:"claude_app",type:"powers", label:"Anthropic created and runs Claude.ai , their flagship consumer product"},
+{co:"google",    app:"gemini",    type:"powers", label:"Google built Gemini AI , their flagship AI product replacing Google Assistant"},
 {co:"microsoft", app:"ms_copilot",type:"powers", label:"Microsoft Copilot runs on OpenAI's GPT-4 via Microsoft's $13B investment"},
-{co:"xai",       app:"grok",      type:"powers", label:"xAI created Grok, built directly into X/Twitter — unique real-time tweet access"},
-{co:"apple",     app:"siri_app",  type:"powers", label:"Apple built Siri with Apple Intelligence — routes hard questions to ChatGPT"},
-{co:"amazon",    app:"alexa_app", type:"powers", label:"Amazon built Alexa — rebuilding it from scratch with generative AI in 2024-2025"},
-{co:"meta",      app:"facebook",  type:"owns",   label:"Meta IS Facebook — the company renamed itself Meta in 2021 to signal its pivot"},
-{co:"meta",      app:"instagram", type:"owns",   label:"Meta bought Instagram in 2012 for $1 billion — now estimated worth $100B+"},
-{co:"meta",      app:"whatsapp",  type:"owns",   label:"Meta bought WhatsApp in 2014 for $19 billion — the largest tech acquisition at the time"},
-{co:"meta",      app:"messenger", type:"owns",   label:"Meta owns Messenger — Meta AI chatbot available as a direct message contact"},
+{co:"xai",       app:"grok",      type:"powers", label:"xAI created Grok, built directly into X/Twitter , unique real-time tweet access"},
+{co:"apple",     app:"siri_app",  type:"powers", label:"Apple built Siri with Apple Intelligence , routes hard questions to ChatGPT"},
+{co:"amazon",    app:"alexa_app", type:"powers", label:"Amazon built Alexa , rebuilding it from scratch with generative AI in 2024-2025"},
+{co:"meta",      app:"facebook",  type:"owns",   label:"Meta IS Facebook , the company renamed itself Meta in 2021 to signal its pivot"},
+{co:"meta",      app:"instagram", type:"owns",   label:"Meta bought Instagram in 2012 for $1 billion , now estimated worth $100B+"},
+{co:"meta",      app:"whatsapp",  type:"owns",   label:"Meta bought WhatsApp in 2014 for $19 billion , the largest tech acquisition at the time"},
+{co:"meta",      app:"messenger", type:"owns",   label:"Meta owns Messenger , Meta AI chatbot available as a direct message contact"},
 {co:"meta",      app:"threads",   type:"owns",   label:"Meta created Threads in July 2023 as a direct X/Twitter competitor"},
 {co:"bytedance", app:"tiktok",    type:"owns",   label:"ByteDance (Chinese company) created and owns TikTok"},
-{co:"google",    app:"youtube",   type:"owns",   label:"Google bought YouTube in 2006 for $1.65 billion — now estimated worth $300B+"},
+{co:"google",    app:"youtube",   type:"owns",   label:"Google bought YouTube in 2006 for $1.65 billion , now estimated worth $300B+"},
 {co:"xai",       app:"x_twitter", type:"owns",   label:"Elon Musk (xAI CEO) bought Twitter for $44 billion in Oct 2022 and renamed it X"},
-{co:"microsoft", app:"linkedin",  type:"owns",   label:"Microsoft acquired LinkedIn in 2016 for $26.2 billion — one of the largest tech acquisitions ever"},
-{co:"openai",    app:"snapchat",  type:"powers", label:"Snap's 'My AI' chatbot is powered by OpenAI's ChatGPT API — integrated into Snapchat"},
-{co:"google",    app:"reddit",    type:"partnership",label:"Google signed $60M/year deal to use Reddit data for AI training — announced Feb 2024"},
+{co:"microsoft", app:"linkedin",  type:"owns",   label:"Microsoft acquired LinkedIn in 2016 for $26.2 billion , one of the largest tech acquisitions ever"},
+{co:"openai",    app:"snapchat",  type:"powers", label:"Snap's 'My AI' chatbot is powered by OpenAI's ChatGPT API , integrated into Snapchat"},
+{co:"google",    app:"reddit",    type:"partnership",label:"Google signed $60M/year deal to use Reddit data for AI training , announced Feb 2024"},
 {co:"microsoft", app:"bing_ai",   type:"powers", label:"Microsoft integrated OpenAI's GPT-4 into Bing Search after their $13B investment"},
 ];
 
@@ -2882,7 +3915,7 @@ function showPanel(d){
   const cat=d.cat,catC=(CAT[cat]||{c:"#334155"}).c,catLbl=(CAT[cat]||{lbl:cat}).lbl;
   const myCoR=CO_RELS.filter(function(r){return r.s===d.id||r.t===d.id;});
   const myApR=APP_RELS.filter(function(r){return r.co===d.id||r.app===d.id;});
-  const chainH=d.chain&&d.chain.length?"<div class=\"chain-box\"><div class=\"chain-lbl\">⛓ Connection chain — who powers what</div>"+d.chain.map(function(c,i){const n=nById?nById.get(c.id):null;const nm=n?n.name:c.id;return(i>0?"<div class=\"chain-role\">↓ "+c.role+"</div>":"")+"<div class=\"chain-step\"><div class=\"chain-dot\" style=\"background:"+c.col+"\"></div><span class=\"chain-nm\">"+nm+"</span></div>";}).join("")+"</div>":"";
+  const chainH=d.chain&&d.chain.length?"<div class=\"chain-box\"><div class=\"chain-lbl\">⛓ Connection chain , who powers what</div>"+d.chain.map(function(c,i){const n=nById?nById.get(c.id):null;const nm=n?n.name:c.id;return(i>0?"<div class=\"chain-role\">↓ "+c.role+"</div>":"")+"<div class=\"chain-step\"><div class=\"chain-dot\" style=\"background:"+c.col+"\"></div><span class=\"chain-nm\">"+nm+"</span></div>";}).join("")+"</div>":"";
   const cH=myCoR.map(function(r){const isSrc=r.s===d.id;const oth=nById?nById.get(isSrc?r.t:r.s):null;if(!oth)return"";const cfg=LT[r.type]||{lbl:r.type};return"<div class=\"conn\" onclick=\"showPopFromPanel('"+r.s+"','"+r.t+"')\"><span class=\"ct "+r.type+"\">"+cfg.lbl+"</span><span style=\"color:#94a3b8;font-size:9px\">"+(isSrc?"→":"←")+"</span><span class=\"cn\">"+oth.name+"</span><span class=\"cd\">"+r.short+"</span><span class=\"cmore\">→</span></div>";}).join("");
   const aH=myApR.map(function(r){const isCo=r.co===d.id;const oth=nById?nById.get(isCo?r.app:r.co):null;if(!oth)return"";const isO=r.type==="owns";return"<div class=\"conn\"><span class=\"ct "+r.type+"\">"+(isO?"Owns":"Powers")+"</span><span style=\"color:#94a3b8;font-size:9px\">"+(isCo?"→":"←")+"</span><span class=\"cn\">"+oth.name+"</span><span class=\"cd\">"+r.label+"</span></div>";}).join("");
   const piEl=document.getElementById("pi");
@@ -2906,7 +3939,7 @@ function showPanel(d){
     "<div class=\"pbox\"><div class=\"pblbl\">💬 Plain English</div><div class=\"pbtxt\">"+d.plain+"</div>"+(d.youknow?"<div class=\"pbyk\">👀 Known for: <strong>"+d.youknow+"</strong></div>":"")+"</div>"+
     "<div class=\"mrow\"><div class=\"mc\"><div class=\"ml\">Founded</div><div class=\"mv\">"+d.founded+"</div></div><div class=\"mc\"><div class=\"ml\">HQ</div><div class=\"mv\">"+d.hq+"</div></div><div class=\"mc w\"><div class=\"ml\">Valuation / Market Cap</div><div class=\"mv\">"+d.val+"</div></div></div>"+
     pplH+prdH+modH+
-    ((cH||aH)?"<div><div class=\"pst\">🔗 Connections — click for details</div>"+cH+aH+"</div>":"")+
+    ((cH||aH)?"<div><div class=\"pst\">🔗 Connections , click for details</div>"+cH+aH+"</div>":"")+
     "<div class=\"disc\">⚠️ Fast-moving space. Updated June 2026; some estimates may shift.</div>";
   document.getElementById("panel").classList.add("open");
   try{history.replaceState(null,"","#"+d.id);}catch(e){if(location.hash.replace(/^#/,"")!==d.id)location.hash=d.id;}
@@ -2963,7 +3996,7 @@ function startViz(){
     }
   });
 
-  // Zoom — initial transform fits entire virtual canvas
+  // Zoom , initial transform fits entire virtual canvas
   // Fit-all zoom: show every tier from Compute to Consumer at once
   const fitScale=Math.min(W/VW,H/VH)*0.95;
   const initTx=(W-VW*fitScale)/2;
@@ -2975,23 +4008,23 @@ function startViz(){
 
   // ── TIER ZONES ──────────────────────────────────────
   const ZONES=[
-    {lbl:"COMPUTE HARDWARE — Nvidia GPUs · AMD · CoreWeave",                                              y1:0,     y2:.086,  c:"#0f172a"},
-    {lbl:"BIG TECH COMPANIES — Microsoft · Google · Amazon · Meta · Apple",                               y1:.088,  y2:.176,  c:"#1e3a8a"},
-    {lbl:"CLOUD INFRASTRUCTURE — AWS · Azure · Google Cloud",                                             y1:.178,  y2:.256,  c:"#312e81"},
-    {lbl:"FOUNDATION AI MODELS — OpenAI · Anthropic · xAI · Mistral · Cohere · SSI  +   CHINESE AI",  y1:.258,  y2:.450,  c:"#4c1d95"},
-    {lbl:"SPECIALIZED AI + PLATFORMS — Midjourney · Runway · ElevenLabs · HuggingFace · Perplexity",     y1:.452,  y2:.528,  c:"#5b21b6"},
-    {lbl:"CODING & DEVELOPER TOOLS — GitHub Copilot · Cursor · Windsurf · Replit",                       y1:.530,  y2:.608,  c:"#1e40af"},
-    {lbl:"ENTERPRISE AI APPLICATIONS — Salesforce · HubSpot · Adobe · Oracle · SAP · ServiceNow",        y1:.610,  y2:.692,  c:"#065f46"},
-    {lbl:"DATA + AUTOMATION + SALES AI — Databricks · Snowflake · Zapier · Make · n8n · Apollo · Clay · ZoomInfo", y1:.694, y2:.800, c:"#78350f"},
-    {lbl:"AI PRODUCTS & ASSISTANTS — ChatGPT · Claude · Gemini · Copilot · Grok · Siri · Alexa · Bing AI", y1:.802,  y2:.882,  c:"#9f1239"},
-    {lbl:"CONSUMER APPS & SOCIAL — Facebook · Instagram · WhatsApp · TikTok · YouTube · LinkedIn · Reddit · Snapchat + more", y1:.884,  y2:1.0,   c:"#1e3a8a"},
+    {lbl:"COMPUTE HARDWARE , Nvidia GPUs · AMD · CoreWeave",                                              y1:0,     y2:.086,  c:"#0f172a"},
+    {lbl:"BIG TECH COMPANIES , Microsoft · Google · Amazon · Meta · Apple",                               y1:.088,  y2:.176,  c:"#1e3a8a"},
+    {lbl:"CLOUD INFRASTRUCTURE , AWS · Azure · Google Cloud",                                             y1:.178,  y2:.256,  c:"#312e81"},
+    {lbl:"FOUNDATION AI MODELS , OpenAI · Anthropic · xAI · Mistral · Cohere · SSI  +   CHINESE AI",  y1:.258,  y2:.450,  c:"#4c1d95"},
+    {lbl:"SPECIALIZED AI + PLATFORMS , Midjourney · Runway · ElevenLabs · HuggingFace · Perplexity",     y1:.452,  y2:.528,  c:"#5b21b6"},
+    {lbl:"CODING & DEVELOPER TOOLS , GitHub Copilot · Cursor · Windsurf · Replit",                       y1:.530,  y2:.608,  c:"#1e40af"},
+    {lbl:"ENTERPRISE AI APPLICATIONS , Salesforce · HubSpot · Adobe · Oracle · SAP · ServiceNow",        y1:.610,  y2:.692,  c:"#065f46"},
+    {lbl:"DATA + AUTOMATION + SALES AI , Databricks · Snowflake · Zapier · Make · n8n · Apollo · Clay · ZoomInfo", y1:.694, y2:.800, c:"#78350f"},
+    {lbl:"AI PRODUCTS & ASSISTANTS , ChatGPT · Claude · Gemini · Copilot · Grok · Siri · Alexa · Bing AI", y1:.802,  y2:.882,  c:"#9f1239"},
+    {lbl:"CONSUMER APPS & SOCIAL , Facebook · Instagram · WhatsApp · TikTok · YouTube · LinkedIn · Reddit · Snapchat + more", y1:.884,  y2:1.0,   c:"#1e3a8a"},
 ];
   ZONES.forEach(function(t,zi){
     const y1=t.y1*VH+3,y2=t.y2*VH-3;
     const zg=main.append("g");
     zg.append("rect").attr("x",4).attr("y",y1).attr("width",VW-8).attr("height",y2-y1).attr("rx",14).attr("fill",t.c).attr("fill-opacity",0.06).attr("stroke",t.c).attr("stroke-opacity",0.2).attr("stroke-width",1.5);
     zg.append("rect").attr("x",4).attr("y",y1).attr("width",VW-8).attr("class","zband-hdr").attr("height",38).attr("rx",14).attr("fill",t.c).attr("fill-opacity",0.12);
-    zg.append("text").attr("class","ztx z"+zi).attr("x",16).attr("y",y1+23).attr("font-size","11.5px").attr("font-weight","800").attr("font-family","Plus Jakarta Sans,system-ui,sans-serif").attr("fill",t.c).attr("fill-opacity",1).attr("letter-spacing","0.03em").attr("pointer-events","none").text(t.lbl);
+    zg.append("text").attr("class","ztx z"+zi).attr("x",16).attr("y",y1+23).attr("font-size","11px").attr("font-weight","500").attr("font-family","JetBrains Mono,ui-monospace,monospace").attr("fill",t.c).attr("fill-opacity",1).attr("letter-spacing","0").attr("pointer-events","none").text(t.lbl);
   });
 
   // ── MAPD BRAND BORDER FRAME ────────────────────────────────────
@@ -3019,7 +4052,7 @@ function startViz(){
     .attr("stroke","url(#mapd-bdg)")
     .attr("stroke-width",2.5);
 
-  // Corner accent marks — L-shaped tick at each corner (MAPD brand feel)
+  // Corner accent marks , L-shaped tick at each corner (MAPD brand feel)
   const cL=40, cOff=6, cW=2.8;
   const cStyle=(p)=>p.attr("fill","none").attr("stroke-width",cW).attr("stroke-linecap","round");
   // Top-left: orange
@@ -3035,13 +4068,13 @@ function startViz(){
   cStyle(bframe.append("path").attr("stroke","#7c3aed").attr("stroke-opacity","0.9"))
     .attr("d",`M ${VW-cOff-cL} ${VH-cOff} L ${VW-cOff} ${VH-cOff} L ${VW-cOff} ${VH-cOff-cL}`);
 
-  // MAPD watermark — bottom-right corner (inside frame)
+  // MAPD watermark , bottom-right corner (inside frame)
   bframe.append("text")
     .attr("x",VW-22).attr("y",VH-18)
     .attr("text-anchor","end")
-    .attr("font-family","'Plus Jakarta Sans',system-ui,sans-serif")
-    .attr("font-size","11px").attr("font-weight","700").attr("letter-spacing","0.12em")
-    .attr("fill","#ff8200").attr("fill-opacity","0.35")
+    .attr("font-family","'Syne',system-ui,sans-serif")
+    .attr("font-size","11px").attr("font-weight","700").attr("letter-spacing","0")
+    .attr("fill","url(#mapd-bdgh)").attr("fill-opacity","0.72")
     .text("MAPD 2026");
 
   // ── CURVE PATH ──────────────────────────────────────
@@ -3100,7 +4133,7 @@ function startViz(){
       // Name label
       g.append("text").datum(d).attr("class","nlt").attr("text-anchor","middle").attr("y",d.r+14)
         .attr("fill","#1e293b").attr("font-size",d.r>=24?"10px":"9px").attr("font-weight","700")
-        .attr("font-family","Inter,system-ui,Arial").attr("pointer-events","none")
+        .attr("font-family","'Syne',system-ui,sans-serif").attr("pointer-events","none")
         .text(d.name.length>15?d.name.slice(0,14)+"…":d.name);
       // Events
       g.on("click",function(ev){ev.stopPropagation();showPanel(d);});
@@ -3171,7 +4204,7 @@ function legacyCopy(text,cb){
     if(cb)cb();
   }catch(e){}
 }
-// Canonical deployed location — used to build shareable links even when the
+// Canonical deployed location , used to build shareable links even when the
 // file is previewed locally or in a sandbox (where location.origin is "null").
 // If you ever move the site, change this one line.
 const CANONICAL_BASE="https://davidemolod.github.io/MAPD/";
@@ -3203,7 +4236,7 @@ function sharePanel(){
   // Inside a sandboxed iframe (e.g. a preview) it can fail, so fall back to copy.
   let isTop=true; try{isTop=(window.self===window.top);}catch(e){isTop=false;}
   if(navigator.share&&isTop){
-    navigator.share({title:"MAPD — "+nm,text:"See "+nm+" on the MAPD AI Ecosystem Map",url:url}).catch(copy);
+    navigator.share({title:"MAPD | "+nm,text:"See "+nm+" on the MAPD AI Ecosystem Map",url:url}).catch(copy);
   } else {
     copy();
   }
@@ -3366,6 +4399,24 @@ window.addEventListener('load', function(){
   });
 });
 </script>
-
+<script>
+/* MAPD glass highlight response */
+(function(){
+  const reactive=document.querySelectorAll('.news-card');
+  reactive.forEach(function(el){
+    el.addEventListener('pointermove',function(event){
+      const rect=el.getBoundingClientRect();
+      const x=((event.clientX-rect.left)/rect.width)*100;
+      const y=((event.clientY-rect.top)/rect.height)*100;
+      el.style.setProperty('--mx',x+'%');
+      el.style.setProperty('--my',y+'%');
+    },{passive:true});
+    el.addEventListener('pointerleave',function(){
+      el.style.setProperty('--mx','50%');
+      el.style.setProperty('--my','50%');
+    },{passive:true});
+  });
+})();
+</script>
 
 </body></html>
